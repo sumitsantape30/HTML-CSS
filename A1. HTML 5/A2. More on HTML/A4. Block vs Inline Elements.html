@@ -1,1 +1,34 @@
+<!-- It's like category kind of concept whether an element is Block type or Inline type of concept -->
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block vs Inline</title>
+</head>
+<body>
+
+	<h2> Heading 1 </h2>
+	<h2> Heading 2 </h2>
+	<!-- the h tags <h2> tags that we used are of Block type. Block means that they start in new line -->
+	<!-- In output "Heading 1" is not occupying the complete width of line but it still blocking the complete line and next 
+	"Heading 2" is beginning from the next line and it is also occupying the complete width available -->
+    <!-- so block HTML tags always start in new line and they occupy the complete width avaible in that line -->
+
+    <p> This is paragraph </p> <!-- this sentence will start from new line means it is a block tag -->
+
+    <!-- Inline tags are those that don't start in a new line and they take as much as space they require for their content and they don't block the complete line -->
+    <img src= "D:/Web Developement/HTML/download.png" width= "200">
+    <img src= "D:/Web Developement/HTML/download.png" width= "200">
+    <!-- In the output these both of the images will appear next to each other, it didn't print in the newline -->
+     <!--  They unnecessarily don't start in a new line when there is space in the same line, also don't block the complete line --> 
+
+     <!-- but if i enclose one image in a <div> now image will appear in new line that means <div> is a block type of html element that means it occupies the complete line and starts in the new line --> 
+    <div>
+    <img src= "D:/Web Developement/HTML/download.png" width= "200">
+    </div>
+
+   <!--  heading, paragraph, div etc are block elements
+    whereas  image, anchor is an inline element -->
+     <a href="https://www.codingninjas.com/"> COding Ninjas </a> 
+</body>
+</html>
