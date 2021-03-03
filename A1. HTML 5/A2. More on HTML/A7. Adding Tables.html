@@ -1,0 +1,50 @@
+<!-- 1. Firstly add the data
+2. then make required part bold
+3. then add the border
+4. Add title of the table-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<table border="2">  <!-- for adding table we need this <table> tag. And to add the border we use border attribute we provide the attribute value which indicates the thickness of the table -->
+
+        <!-- for the heading/title of the table we have <caption> tag. make sure that caption element is just after the table element -->
+        	<caption>Demo Table</caption>
+
+		<!-- In order to add one row we need table row element <tr>, if there are 4 rows then I need 4 opening and closing <tr tags -->
+			<tr> <!-- first row -->
+				<!-- In order to add data to table we need to add data to every row, so to add data within one row we need to use <td> -->
+				<th> </th> <!-- first column is empty, first row is bold so I can use <th> means table header instead of </td. I could have use <td> table data and then make it bold -->
+				<th>Column 1 </th>
+				<th>Column 2 </th>
+				<th>Column 3 </th>
+			</tr>
+			     <!-- first entry of every row will serve as header for that row -->
+			<tr> <!-- second row: It has the cell value-->
+				<th> Row 1 </th> <!-- first column ke second row mai Row 1 likha hai -->
+				<td>Cell 1,1 </td>
+				<td>Cell 1,2 </td>
+				<td>Cell 1,3 </td>
+			</tr>
+			<tr>
+				<th> Row 2 </th> 
+				<td>Cell 2,1 </td>
+				<td>Cell 2,2 </td>
+				<td>Cell 2,3 </td>
+			</tr>
+			<tr>
+				<th> Row 3 </th> 
+				<td>Cell 3,1 </td>
+				<td>Cell 3,2 </td>
+				<td>Cell 3,3 </td>
+			</tr>
+	</table>
+
+</body>
+</html>
+
