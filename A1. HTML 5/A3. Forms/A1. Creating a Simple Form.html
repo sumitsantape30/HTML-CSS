@@ -1,0 +1,33 @@
+<!--  We will make the login form which has username, password and a submit button -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+</head>
+<body>
+
+	<!-- In order to create a form the element that we need is a <form> element -->
+		<form>
+
+			<!-- to take the input from usr we have <input> tag, it has two values attribute type and name. Type indicates what type of input you want to take here I want to take text -->
+			<div>
+			   <label for="username"> Username </label> <!-- we need to specify that here you enter the password that's why use label tag now this label tag has an attribute called for, in this for we need to tell that which is this label for, so this label is for the username input element so we specify that it's for username input element so this element should have a unique id, so our label is for element with id name username-->
+			   <br> <!-- Username text and uska box next line mai ho isliye br tag -->
+			   <input type= "text" id= "username" required>  <!-- to take username input, also the field should not be left empty so we use required attribute, this attribute is a boolean attribute. Boolean attributes are whether the value will be there or will not be there and we don't need to specify attribute value writting simply required means the value is true that it is needed and if it is not present that means value is false -->
+		    </div>
+		    <div>
+		       <label for="password"> Password </label> <!-- similarly for password as well -->
+		       <br>
+		       <input type= "password" id= "password" required>  <!-- to take the password input, the attribute type will be password coz we don't want anyone to see our password instead we'll show them dots -->
+		    </div>
+		     <!-- for submit attribute type will be submit -->
+		    <div>
+		       <input type= "submit">
+		    </div>
+		    <!-- input tags are inline tage so one thing we can do is add <br> tag or we can enclose them in <div> tag -->
+
+		</form>
+
+</body>
+</html>
