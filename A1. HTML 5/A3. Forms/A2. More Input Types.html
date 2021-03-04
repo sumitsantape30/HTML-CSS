@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+</head>
+<body>
+
+		<form>
+
+			<!-- To take the number input -->
+			<div>
+			   <label for="number"> Number </label> 
+			   <br> 
+			   <input type= "number" id= "number" required> <!-- To take the number input -->
+		    </div>
+
+		    <!-- To take the time input -->
+		    <div>
+			   <label for="time"> Time </label> 
+			   <br> 
+			   <input type= "time" id= "time" required> <!-- To take the time input -->
+		    </div>
+
+		    <!-- To take the email input -->
+		    <div>
+			   <label for="email"> Email </label> 
+			   <br> 
+			   <input type= "email" id= "email" required> <!-- To take the email input, if input is not in email format it will show the error, it's format should be abc@...com -->
+		    </div>
+
+		    <!-- To take the url input -->
+            <div>
+			   <label for="url"> Url </label> 
+			   <br> 
+			   <input type= "url" id= "url" required> <!-- if entered url is not in proper format it'll give you an error -->
+		    </div>
+
+             <!-- To take the Range input -->
+		    <div>
+			   <label for="range"> Range </label> 
+			   <br> 
+			   <input type= "range" id= "range" required> 
+		    </div>
+              
+              <!-- You can also give the minimum and maximum values in the range and also and put steps  -->
+            <div>
+			   <label for="range"> Range </label> 
+			   <br> 
+			   <input type= "range" id= "range" required min= "10" max= "50" step= "10"> <!--suppose for one slide it's 10 unit -->
+		    </div>
+
+		    <div>
+		       <label for="password"> Password </label> 
+		       <br>
+		       <input type= "password" id= "password" required> 
+		    </div>
+
+           <!--  In some input section there is some text written over there just to indicate what kind of value this field is expecting jaise empty email field mai likha hota hai: abc@example.com and as soon as we click on it goes away so we can do that with help of placeholder attribute -->
+		     <div>
+			   <label for="email"> Email </label> 
+			   <br> 
+			   <input type= "email" id= "email" required placeholder= "abc@example.com"> 
+		    </div>
+
+		    <div>
+		       <input type= "submit">
+		    </div>
+
+		</form>
+
+</body>
+</html>
