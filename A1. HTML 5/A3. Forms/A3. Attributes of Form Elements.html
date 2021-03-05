@@ -1,0 +1,44 @@
+<!--  Forms are useful for data collection, sign up form, login form etc so after collecting information our next step should be whatever data that we have collected pass it further means there will be some format in which form will be passing the data further. -->
+<!-- so for every field you are collecting data in form has two thing name and value, name of the field and value of the field, value of the field is whatever the data user has entered and name of the field is something that we have to specify -->
+<!--  so name for email section is email and values will be the email id that user has entered. for country section name will be country and it's value can be India if somebody wants to use this data somewhere you shuld know the name of the field so if I want to extract the data that what was the value of the country 
+then I should no the name of that particular field and corresponding to that name I'll get value -->
+<!-- so for every field you create, every input you have you should have a name bcoz otherwise form will not pass its data further, so I have added all the names to all the fields
+ -->
+
+<!-- if you want to specify default value you can do that using value attribute, if we didn't get any input then default value will be passed further  -->
+
+<!-- in many forms there are some fields which are disabled means our data is already filled in so if there are some details that are aready filled in and you don't want somebody to edit them in form then you can mark that field as disabled -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form>
+
+			<!-- To take the number input -->
+			<div>
+			   <label for="email"> Email </label> 
+			   <br> 
+			   <input type= "email" name="email" id= "email" required placeholder= "abc@example.com"> <!-- in order to add name we need name attribute so here name for email is email. and if you want to specify default value you can do that using value attribute -->
+		    </div>
+
+		    <div>
+			   <label for="country"> Country </label> 
+			   <br> 
+			   <input type= "country" name="country" value="India" required id= "country" disabled=""> <!-- here name for country is country and we're putting by default value to be India. After putting the disabled the country will be disabled and you can't edit it anymore, if you're marking disable make sure you're showing some value corresponding to that -->
+		    </div>
+
+		    <div>
+			   <label for="password"> Password </label> 
+			   <br> 
+			   <input type= "password" name="password" id= "password" required> here name for password is password
+		    </div>
+
+    </form>
+
+</body>
+</html>
