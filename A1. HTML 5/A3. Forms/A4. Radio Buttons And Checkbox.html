@@ -1,0 +1,45 @@
+<!--  In radio button we've given multiple options and we've to select the option out the given options, obviously one options out of the all the options can be selected -->
+
+ <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form>
+
+		<!-- for Radio Buttons -->
+
+		 <p> Gender </p>
+		 <!--1. i need three radio buttons -->
+		 <!--2.all buttons should appear in new line as it'll apprea in single line as it is inline element so add <br> -->
+		 <!--3. simply 3 buttons are not indicating any information to me so what each button specifies is missing so we need to specify  -->
+
+		 <input type= "radio" name= "gender" value= "female" checked > Female <br>
+		 <input type= "radio" name= "gender" value= "female"> Male <br>
+		 <input type= "radio" name= "gender" value= "female"> other <br>
+		 <input type= "submit">
+	
+	    <!-- 4. We should be able to click on option out of all as of now we're able to select all the options
+		 we should be able select one option so put name attribute -->
+		<!--  5. purpose of name: generally the purpose of form is to collect data and forward it so whatver data is collected is passed further now the format in which it passes data is fixed: name and value user has specified corresponding to that name. so here the data that I'm collecting is regarding the gender so I have to collect gender so that's why name attribute is "gender" and it is same for all three options as one of these will be forwarded that's why we have grouped them via same name. -->
+		<!-- 6. so after selectiong one option suppose we chose female, and format in which data is passed is " Name: value"
+		for now we have decided the name but what will be the value this is not yet decided, selecting a radio button will not pass a value we need to specify what value this radio button has, so we need to specify value attribute as well -->
+		<!-- 7. Adding radio buttons you need to have radio input type, then we need name, name will group the radio buttons together and every radio button should have name as well as value associated with it so when you select the option that value will be passed -->
+
+		<!-- 8. the one radio button is checked itself so if you want to check a radio button by default there's checked attribute for that, the female radio button will be checked by default, if you select other option and refresh the pointer will go to the famale. This is boolean attribute so we don't need to specify any value just writing checked will work as well -->
+
+		<!-- for checkboxes, to select the multiple options -->
+		<p> Course Done </p>
+		<input type="checkbox" name="course" value="c++" checked> c++ <br>
+		<input type="checkbox" name="course" value="java"> java <br>
+		<input type="checkbox" name="course" value="python"> python <br>
+		<!--9. here I can unchecked the options as well, radio button mai waisa nhi tha I can't uncheck the option in radio button -->
+        <!-- 10.so name in case of radio button we were able to group the radio buttons together via name but that's not the case with checkbox, we provide checkbox for user to select the multiple choices so that's not what name is here in checkbox, it obviosuly serves the purpose whenever the data of this form will be forwarded we will be using name corresponing to that --> 
+        <!-- 11. if you want to be checkbox to be selected by default the way we did for radio button similarly we can do it here as well -->
+
+    </form>
+
+</body>
+</html>
