@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form>
+
+		<p> Months <p> <!-- title -->
+
+		<!-- adding dropdown list for that we need to use <select> tag-->
+		<select name="month_selected"> <!-- don't forget the name attribute -->
+			<!-- there are multiple options in the dropdown list so for evey option we need to use option tag -->
+			<option> Jan </option>
+			<option selected> Feb </option> <!-- jan is selected by default in output so if you want some other option to be default then you can do that using selected attribute, it is a boolean attribute -->
+			<option> March </option>
+			<option> April </option>
+		<select>
+
+			<!-- we can also select multiple options in dropdown list  -->
+        <select name="month_selected" multiple> <!-- to select multiple options we can add multiple attribute, it's boolean attribute -->
+			<option> Jan </option>
+			<option selected> Feb </option> 
+			<option> March </option>
+			<option> April </option>
+		<select> <!-- you can select multiple options by ctrl+click on it -->
+
+        
+        <!-- next tag is related to texual information, if you have take some texual information we have <input type= "text"> but it takes only single line input but in lots of cases we would want to take more than one line input so in order to have multiple lines input we have <textarea></textarea>  -->
+        
+        <p> Share Your Experience </p> <!-- we should have paragraph as well -->
+        <textarea name="Experience" rows= "10" columns= 30 ></textarea> <!-- we can also control the dimensions of the text box by specifying rows columns -->
+        <br>
+         
+         <!-- Now we'll learn how to use more buttons -->
+        <!--  we can use input type button instead of submit -->
+        <input type="button" value="Button 1"> <!-- and we can add text to the button using value attribute -->
+        <!-- there's also another way to add button using button tag -->
+         <button type="button"> Button 2 </button> <!-- button tag can take 3 values for type attribute *Open Book*, here i want normal button-->
+        <!--  I can also add image to my button, within the closing tag prvide a source of image -->
+        <button type="buttom"> <img src="D:/Web Developement/HTML/download.png"> </button> <!-- you can also provide the height and width of the button -->
+        
+	</form>
+
+</body>
+</html>
