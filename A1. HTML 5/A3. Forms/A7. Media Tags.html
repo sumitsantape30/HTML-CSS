@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+ 		
+ 		<!-- in order to add audio we can use audio tag and we need to provide the source(src) of the audio, the path of the file can be absolute or raltive path. Also we need to add controls as well-->
+ 		<audio src="D:/songs/Saibo_Remix.mp3" controls></audio>
+
+        <!-- browser doesn't recognize all audio formats so if you have a file in multiple audio formats then use source tag and write source there instead of in audio tag-->
+        <source src="D:/songs/Saibo_Remix.mp3" type="audio/mp3"> 
+       <!--  let's say I have the same file with different, why we wrote this? In case browser is not able to read the first mp3 file then it will try reading the file from second format. suppose you have multiple files in multiple formats and you are not sure which format will actually support so you can use source tag for that  -->
+        <source src="D:/songs/Saibo_Remix.ogg" type="audio/ogg">
+        
+        <br> <!-- audio and video tags are inline so used br tag -->
+
+        <!-- Video tag -->
+        <!-- if you want to provide one source you can specify path in <video> or if you want to provide multiple sources then we can use the <source> tag here -->
+        <video height= "200" width="200" controls=""> <!--  you can control the height and width of the video as well and control attribute as well and it's a boolean, you'll see the controls corresponding to the videos -->
+        	<source src="D:/songs/BombayStories.mp4" type="video/mp4"> <!-- type will be video/mp4 -->
+        	Browser doesn't support this video format.	<!-- within opening and closing tag you can write some text as well this text will apprear only in case browser is not able to play the video if browser is able to play the video then this text will not be shown-->
+        </video>
+        <!-- you can also specify multiple sources in case you are not sure --> 
+
+        <!-- now figure tag, we use figure tag to add different figures, images to your page -->
+        <fiugre>
+        	<img src="D:/Web Developement/HTML/images.png">
+        	<!-- you can also add caption to the figure as well -->
+        	<figcaption> Logo Image </figcaption>
+        </fiugre>
+
+</body>
+</html>
