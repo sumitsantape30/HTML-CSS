@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+    <!--  we know that purpose of form is collect data and pass on that data, so where form should send data to? we can specify that using action attribute, we need to specify the URL of the page where form is supposed to send whatever data it has collected, we'll have this URL when we'll backend. -->
+   <!--  there's also another important attribute as well that's method so we have to specify the http method that we want to use, what is http request method? *open Book* -->
+    <!-- the main purpose of get is we're requesting some information from the server, we don't want server to make changes in it's database we just want server to give us some information in that case we use get -->
+    <!-- the post requests are made when you want to send some data to the server and you want server to make some changes in its data. -->
+    <!-- other difference between them is: when method is get whatever data we submitted to the form, that data will become part of the URL but this is not secure this is visible to anybody so when you wish to send information like password then get is not good option so in that case we use post, now data you have submitted will not be the part of the URL you can see that information by clicking on inspect by right clicking on the mouse-->
+	<form action="" method="post">
+		
+		<p> Months <p> 
+		<select name="month_selected"> 
+			<option> Jan </option>
+			<option selected> Feb </option> 
+			<option> March </option>
+			<option> April </option>
+		<select>
+
+		<p> Share Your Experience </p> 
+        <textarea name="Experience" rows= "10" columns= 30 ></textarea> 
+
+        <br>
+         
+       <!--  <input type="button" value="Button 1"> 
+         <button type="button"> Button 2 </button> 
+        <button type="buttom"> <img src="D:/Web Developement/HTML/download.png"> </button>  -->
+        <input type="submit">
+
+	</form>
+
+</body>
+</html>
