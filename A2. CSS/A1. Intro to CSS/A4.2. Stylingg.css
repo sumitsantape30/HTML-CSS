@@ -1,0 +1,10 @@
+/*now I have external file which have a general rule for p tag, it says that all p tag should have color as ornage.*/
+ same case is here if I have multiple p tag rules 
+
+p{
+	color: orange;
+}
+
+p{
+	color: black; now color of the 2 para is going to be black so the last rule which stays will be applicable
+}
