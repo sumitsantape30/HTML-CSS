@@ -1,0 +1,49 @@
+<!-- We have learnt 3 different ways to add styles using CSS now we'll discuss their preference. we have learnt inline CSS, internal CSS, external CSS.
+so here we have3 different paragraphs and we'll be applying the CSS rules to these paragraphs. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Five tips for front-end Development </title>
+	<!-- 2. Now internal CSS, you can add internal CSS using style tag, whatever css rules you want to write you can write here. -->
+
+	<!-- 5. Now i'll link the external CSS using the link tag -->
+    <!-- <link rel="stylesheet" type="text/css" href="stylingg.css"> -->
+
+	<style type="text/css">
+    
+    /* 6. after linking, 1st pragraph will have inline css and other two paragraphs will have internal css*/
+    /* 7. but we can't coclude that internal CSS will always win if you put <link> tag after the the style tag the color of the 2 para will become orange.*/
+
+	  p{  /* 3. this rule will be applied to all p tags, will specify the rules within curly brackets */
+		color: blue;  /*i want all paragraphs should have blue color*/
+     } 
+
+     </style>
+     
+    <!--  8.when we put link tag after the style tag -->
+     <link rel="stylesheet" type="text/css" href="stylingg.css"> <!-- now rest two paras will be in orange color -->
+    
+    <!-- 9. so it's not that external or internal css will always win, if there are multiple rules then last rule will be applied to the css tag we're talking about. If we scan from top to bottom then the last rule present for color of a p tag is this orange rule so here last rule is applied -->
+
+     <!-- 4. So for paragraph number 2 and 3 there's no conflict the general CSS rule that we have applied in the internal CSS will be applicable but for paragraph number1 there's conflict, our inline css rule says color should be red and internal css rule says that color should be blue, so color of first paragraph will be red coz inline CSS rules wins -->
+
+
+</head>
+<body>
+	
+	<!-- 1. firstly start with the inline css rule, you can apply inline css rule using style attribute and you have to write down the property to which you have to specify the value so here property is color and value for color is read -->
+	<!-- so inline css rule effects only the tag to which you have applied this rule, this is an attribute so this will be applied to the current p tag other two p tags are not affected-->
+	<p style="color: red";> 
+	Commenting is one such practice that is often ignored by programmers, especially for codes that are written by multiple programmers. But remember, commenting is an important part of project you create. With proper comments and organised files its always easier for you or others to jump in and understand where things are at and how they work.
+	</p>	
+	<p>
+	A front-end developer has to keep himself/herself updated continuously with the latest news and innovations in the field. You need to take a proactive stand and learn new things about front-end development from informative blogs and videos. Following are some of the most informative and useful learning sources for front-end developers -
+	</p>
+						
+	<p>
+	By “refactoring” your code, you’re only enhancing the code without tampering with its functionality. This will improve the quality and readability quotient of your code and the more often you do it, your code will continually be updated into a cleaner and fresher version of what it was before. Apart from that, one of the most significant advantages that refactoring offers is that it ensures your code remains free from plagiarism.
+	</p>	
+
+</body>
+</html>
