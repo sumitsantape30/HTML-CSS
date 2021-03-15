@@ -1,0 +1,32 @@
+p {
+    /*color: blue;*/
+    font-size: 20px;
+    /*font-family: serif;*/
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/*h4{
+	text-transform: uppercase;
+} 
+*/ 
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.cursive{
+	font-family: cursive;
+} 
+
+/*I have to set color to this particular value*/
+/* So should set this CSS rule to the element which has the id as blog-desc so in order to access element via id you have to use hash(#)*/
+#blog-desc{
+	color: #1e6b4b;
+}
+
+/*why id why not class?  Using class here doesn't make sense, generally we use class for reusibility, there's a CSS rule which you feel that rule will be applied at multiple places, we can write that CSS in class
+and use that class at multiple places, here this color green is applied to only one element, coz I wanted to apply
+CSS rule to this particular element*/
