@@ -1,0 +1,37 @@
+p {
+    /*color: blue;*/
+    font-size: 20px;
+    /*font-family: serif;*/
+}
+
+h1 {
+    font-size: 40px;
+}
+
+/* the CSS rule to convert a text into uppercase is text transform. 
+I want to appy this to <h4> heading so I'll have to enclose this rule within the <h4> heading*/
+
+/*h4{
+	text-transform: uppercase;
+} 
+*/ 
+
+/* the way we have uppercase we have lowercase as well if you want to convert in lowercase.*/
+
+/*but if there are <h4> headings in other list, all h4 headings in else where my code they should not be affected 
+    so I should write a CSS rule and apply it to bunch of elements and not apply to every occurence of h4 heading we can achieve this using CSS class*/
+ 
+/* I want only <h4> headings of first list, which are part of first list*/
+/*so in order to create a CSS class  : .(dot)className, and text-transfor is the CSS rule  */
+.uppercase{
+	text-transform: uppercase;
+}
+/*so this is the uppercase class, this class can have more than one CSS rule as well so I want thatsome element out of multiple elements should follow CSS rule that are there in the class.
+In order do that specify class in an element. So now I'll apply this class to the <h4> tag */
+
+
+/*All the headings being in uppercase they should be recursive as well, so i'll write another CSS class for the rule cursive.*/
+/*the .(dot) indicates that this is a class, and then it is followed by the class name (cursive)*/
+.cursive{
+	font-family: cursive;
+} /*I want that <4> heading should be in uppercase as well as they should be in cursive as well. that means there are two classes so we can specify more than 1 class as well.*/
