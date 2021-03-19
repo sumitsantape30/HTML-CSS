@@ -1,0 +1,50 @@
+p {
+    /*color: blue;*/
+    font-size: 20px;
+    /*font-family: serif;*/
+}
+
+h1 {
+    font-size: 40px;
+    /*font-family: serif;*/
+}
+
+h1, p {
+       font-family: sans-serif;
+}
+
+/*when we were learning classes, while learning classes our intention was that I want to set all the heading list items to capital and cursive so for that we had made two classes one for uppercase and one for cursive and set those classes to all the list items
+there's actually another option to do that*/
+
+/*so I actually want to make all the h4 heading that are within the list to recursive as well as uppercase*/
+/*I want all h4 headings which are within a list so li h4*/
+/*so firstly it'll search for list item(li) then it'll search for h4 headings within list item and will apply the CSS rule to those h4 heading */
+/*so here I want to apply two CSS rules*/
+
+/*li h4{
+	text-transform: uppercase;
+	font-family: cursive;
+}*/ /*but this will apply this CSS rule to all the h4 in every list item of the whole page so this is not right thing to do, then the right thing will be the way we did using classes*/
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.cursive{
+	font-family: cursive;
+} /*Now all the lists will not be affected*/
+
+/*you can do nesting with classes and id's as well *see html page's div tag*/
+
+/*for id*/
+/*site desripiton all p tags*/
+/*within the element which has id as site desc, I want to set their color to red*/
+#site-desc p{
+	color: red;
+} /*Now paragraph enclosed within p tag will be red*/
+/*if there was a class then would have becom .site-desc instead of #*/
+
+#blog-desc{
+	color: #1e6b4b;
+}
+
