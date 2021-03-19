@@ -1,0 +1,35 @@
+<!--  I want that the font family of the heading and the paragraph, whatever the paragraphs and heading I have. So font family of heading and paragraph should be set to sans-serif -->
+
+p {
+    /*color: blue;*/
+    font-size: 20px;
+    /*font-family: serif;*/
+}
+
+h1 {
+    font-size: 40px;
+    /*font-family: serif;*/
+}
+ /*So we added font family CSS rule which is common in both p and h1 and I'm just repeating again*/
+/* so what we can do is we can group selectors together now means writing them something like following and we'll comment font-family from both p and h1*/
+ /*I'll write the common rule here*/
+h1, p {
+       font-family: sans-serif;
+} /*you can group selectors this way*/
+
+/*we can also group classes or id's as well (h1, uppercase, # etc) */
+/*so if there are certain set of rules which are common so instead of writing them again and again we can just group them */
+
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.cursive{
+	font-family: cursive;
+} 
+
+#blog-desc{
+	color: #1e6b4b;
+}
+
