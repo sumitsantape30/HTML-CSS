@@ -1,0 +1,24 @@
+p{  /*I'll apply a type selector here*/
+
+   color: blue;
+
+}
+
+/*we'll write down the rule for class as well*/
+/*here class name is having multiple words, class and red. We generally don't use spaces in class name we oftern use hyphen -*/
+.class-red{
+	color: red;
+}
+
+/*ID selector rules*/
+#para-id{ 
+	color: purple ;
+}
+
+/*the common mistake we do is while writing CSS rules we end up writing rules for classes again and again*/
+/*so I have redefined the class here*/
+.class-red{
+	color: brown;
+}
+ /*if there are two same selectors rules written one after another so what will be the final rule applied?
+ So these two rules have same spceicifity, rules with same specifity will actually be applied in the sequence of the one which is later so the latest of them actually wins*/
