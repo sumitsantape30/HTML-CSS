@@ -1,0 +1,17 @@
+/*will style to the div*/
+#div1{
+	height: 200px; /*height be 200px for now*/
+	width: 200px; /*and width be 200px for now*/
+	/*background-color: red;*/  /*first way of specifying color*/
+    /*background-color: #07e250;*/ /*copy and paste the hexadecimal code by inspecting*//* second way of specifying color*/
+     /* background-color: rgb(25,126,200)*/  /*third way, we can directly specify the rgb value, rgb value is from 0 to 255 instead of writing in hexadecimal. We specify what percentage of red green blue we wanr*/
+    
+     /*Another alternate to rgb is rgba and this will require another value and that's alpha*/
+     background-color: rgba(25,126,200,0.4); /*alpha is opacity, so you need to specify opacity value this value will be in between 0 to 1, 1 will be the full color */
+     /*you can also change the opacity value by inspecting*/
+
+    /* after rgba you can specify hsl values as well, hsl means hue saturation and lightness*/
+    background-color: hsl(); /*you can specify values here for hsl*/
+
+    /*6th way is hsla, a stands for alpha*/
+} 
