@@ -1,0 +1,52 @@
+/*#div1{
+
+	height: 200px;
+	width: 300px;
+	background-color: #07e250
+}*/
+
+/*#div2{
+	height: 100px;
+	width: 150px;
+	background-color: cyan;
+}*/
+
+/*Now I can actually specify height and width of this div relative to the parent*/
+/*so I can specify height and width of div2 in terms of it's parents height and width
+I wan height of this div2 should be 50% of the height of the parent so I can relatively specify in percentage*/
+#div2{
+	height: 50%;
+	width: 50%;
+	background-color: cyan;
+}
+
+/*Another relative unit is vh and vw, vh is viewput height and vh is viewput width*/
+/*viewput is the visible area of the browser*/
+/*so I can specify height and width instead of pixels in terms of viewput*/
+ /*comment the top #div*/
+/*
+#div1{
+ 
+	height: 75vh; /*if I want height to occupy the complete viewput height then i'll write 100vh*/
+	/*width: 100vw;*/  /*if I want to specify the width to take the complete viewput width then i'll specify 100vw*/
+	/*background-color: #07e250*/
+/*}*/
+/* so in output outer div will take the complete viewput height and width and inner div is taking 50% of inner div*/
+
+/*next unit is rem, this unit is relative to the font size of root element. (root element of the page is html element)
+so 1rem is equivalent to the font size of root, 1rem= font_size of root. If font_size of root is 16px then 1 rem will be 16px so whatever the font size of the root 1 rem will be that value.*/
+/* mid mai jo div hai usko comment karo*/
+#div1{
+ 
+	height: 4rem; 
+	width: 6rem;  
+	background-color: #07e250
+} /*after getting output if you inspect it you'll see width and height to be 120x80 means it's 6rem*4rem so we can conclude here that 1rem=20px  */ 
+
+html{
+	font-size: 30px;
+}
+
+/*there's also other unit called as em, rem is related to root and em is ralted to parent so 1em will be equivalant to font-size of parent of that element*/
+
+
