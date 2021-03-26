@@ -1,0 +1,20 @@
+
+
+#sample-para{
+    font-size: 30px;  /*you can change the font size of the text*/
+    color: blue;
+    /*font-weight: bold;*/ /*if you want characters to be thin or thick, suppose you want them to be bold. There's also normal, bolder, this bolder means this will be bolder than the inherited font value so inherited font whatever it is it'll be bolder than that, by inherited by simply means that parent font wieght it has inherited so it'll bolder than that*/
+    /* you can also specify font weight in numbers as well that number will range from 100 to 900, 100 is the thinnest and 900 is the thickest*/  
+   font-weight: 700;
+
+   /*you can align text as well*/
+    text-align: justify;
+    line-height: 40px; /*you can experiment with height of 1 line*/
+    /*word-spacing: */ /*if you want to adjuct the spacing between  the words you can do that as well*/
+    text-transform: uppercase; /*this will set all the text in uppercase*/
+   /* there's decoration in case you want to decorate the text*/
+    text-decoration: underline; 
+
+    /*there are more text styling properties which you can explore by inspecting
+    you can also google mdn css doc's to explore more*/
+}
