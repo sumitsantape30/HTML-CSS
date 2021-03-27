@@ -1,0 +1,47 @@
+
+html {
+    font-size: 30px;
+}
+
+/*currently the margins between blue box and orange is 0*/
+ /*which is why the orange element is starting just next to blue element*/
+
+#outer-div1{
+    height: 200px;
+    width: 200px;
+    background-color: #393a7b;
+    /*Now I want to set margin of outer div to 1, inorder to set margin all we have to do is use margin property and set its value*/
+     /*margin: 4px;*/ /*the margin to the left right top bottom will be actually at a gap of 4px from this element to the other element, you can inspect and try to increase the margin then in all 4 direction the margin will be increasing*/ 
+   
+   /*instead of specifying one value you can specify two as well*/
+   /*margin: 4px 10px;*/ /*4px will be vertical margin(top & bottom) and 10px will be horizontal mergin (left & right)*/   
+   
+    /*you can specify 3 values as well, then they mean first value is for top second value is for left and right and third is for bottom.*/
+    /*you can specify all 4 of them as well*/
+    margin: 4px 10px 20px 30px; /*top, right, bottom, left*/
+   
+    /*Setting the margin to auto, it'll place the element in the center of the screen so this will automtically adjust horizontal margins and vertical margins will be 0*/ 
+    /*margin: auto;*/
+
+    /*if you don't want to specify all margins together or just want to add top or left margin you can do that as well*/
+    /*margin-top: 10px;*/ /*this will only set top margin*/
+
+    margin-bottom: 20px; /*so next element to the outer div will start at the margin of 20px*/
+}
+
+#inner-div1{
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+}
+
+#outer-div2{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+
+    /*let's set margin of outer-div2 to 10px*/
+    margin-top: 10px; /*as bottom margin of outer-div1 is 10px and margin of outer-div2 is 10px so gap between these two divs should be 20px but this won't happen, vertical margins get collapsed they don't get add. so they both will be 10px apart, maximum of two will be the margin */
+   /* if I make outer-div1 to 20px that won't make them 30px apart instead it'll make them 20px apart, max of the two so verticall margins actually collapse but that's not the case with horizontal margins.*/
+   /*horizontal margins get added and vertical margins collapse*/
+}
