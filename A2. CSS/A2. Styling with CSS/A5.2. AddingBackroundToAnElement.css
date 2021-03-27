@@ -1,0 +1,31 @@
+
+/*this is the id correpsonding to the div*/
+#logo-img-container{
+    height: 100vh;
+    width: 100vw;
+
+    /*Now i'll set backround*/
+    background-image: url("D:/Web Developement/HTML/five-tips-for-front-end-web-development.jpg"); /*setting image as backround*/
+   
+   /* In case you want your image not to repeat you can do that as well*/
+    background-repeat: no-repeat; /*I have selected no-repeat there are other properties as well you can explore by inspecting*/
+    /*if you want to repeat the image in x or in y direction you can do that as well*/
+
+    /*Now we have position, you can set the position of the backround*/
+    /*background-position: center;*/ /*Now image will be in the center of div we have, you can inspect and explore as well*/
+   /*but the now the backround, if I'm not repeating it is not as big as the div is, I have the bigger area but the backround that I have is not fitting the complete area so I can specify the backround size as well*/
+   /* by default the size is Auto, auto is adjusted according to the dimensions of the image that you are using, in case I want to cover the entire container I can set it to cover*/
+    /*background-size: cover;*/
+
+    /*In case the image is bigger than the container and you want full image to be visible then you can set to contain as well*/
+    /*background-size: contain;*/ /*it'll make the complete image visible*/
+
+    /*or if you want to specify dimensions, I want to specify width 100px and height 300px*/
+    background-size: 100px 300px;
+
+    /*by default backround background-attachment property is scroll, that means when you are scrolling the page the image is also scrolling with page as well*/
+    /*background-attachment: scroll;*/
+     /*now you can set it to fix, means backround will be still and you'll be scrolling abouve it*/
+    background-attachment: fixed;
+
+}
