@@ -1,0 +1,39 @@
+
+html{
+    font-size: 30px;
+}
+
+#outer-div1{
+    height: 200px;
+    width: 200px;
+    background-color: #393a7b;
+    /*margin: 4px 10px 20px 30px;*/
+    /*margin: auto;*/
+    /*margin-top: 10px;*/
+    margin-bottom: 20px;
+
+    /*let's give a padding of 5px*/
+    /*specifying one padding value means all top right bottom and left, all the padding values will be same*/
+    /*padding: 5px;*/ /*so now it'll push inner div at some space*/
+
+    /*you can specify two values as well, so first value will be for vertical padding and second value will be for horizontal padding*/
+    padding: 20px 10px ;
+  
+    /*you can specify 4 values, different padding value for every dimension*/
+    padding: 20px 10px 5px 25px ;
+    
+}
+
+
+#inner-div1{
+    height: 50%;
+    width: 50%;
+    background-color: cyan;
+}
+#outer-div2{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    margin-top: 10px;
+
+}
