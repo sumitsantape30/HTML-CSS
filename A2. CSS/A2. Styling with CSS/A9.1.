@@ -1,0 +1,126 @@
+
+body {
+    margin-left: 60px;
+    padding: 0px;
+}
+
+#content {
+    margin-top: 40px;
+}
+
+/* main header */
+/*come here after studying the aside part till the end*/
+/*I want that this main section should have width of 70% it should not occupy the complete area*/
+main {
+    width: 70%; /*after this i will have some space to place the aiside section*/
+    /*I should set its display to inline block so that there's room for aiside to come up*/
+    display: inline-block;
+
+}
+
+#main-header {
+    width: 100%;
+}
+
+#site-desc a {
+    font-size: 2rem;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1.25;
+    font-family: "Gill Sans", sans-serif;
+}
+
+#about-site {
+    color: #3c5349;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+#site-desc a:hover {
+    color: #dc6520;
+}
+
+/* Blog */
+
+/* Blog Header */
+
+#blog-header h1 {
+    font-size: 3.5rem;
+    font-family: "Gill Sans", sans-serif;
+}
+
+#blog-header h1:hover {
+    color: #dc6520;
+}
+
+/* main article */
+
+#views img {
+    height: 15px;
+    width: 15px;
+}
+
+#views span {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+#blog-content {
+    font-size: 1.1rem;
+    font-family: Georgia, serif;
+    word-spacing: 1px;
+    line-height: 1.4;
+}
+
+/* Aside */
+
+/*within the aiside section there's class called widget and now this applies to all the sections*/
+.widget {
+    border-top: 4px solid black; /*all the section I'm talking about have a border*/
+}
+
+/*Now work on inputs, I want these inputs to have display block*/
+
+/*input{
+    display:block;/*after this all the inputs will be at the bottom of the page and in the next line*/
+    /*but writing a type selector this way will apply to all inputs but I don't want that so I'll specify the input in a better way
+    I'll write in a below format
+}*/
+
+/*so now all the input under the widget class will have their display as block now*/
+.widget input {
+    display: block; 
+    /*pick the better color for the form*/
+    background-color: #F7F7F7;
+    margin-bottom: 15px; /*add margins so that it looks more cleaner*/
+    padding: 4px; 
+    color: black;
+    font-size: 1.2rem; /*font size of the text in input box*/
+}
+
+/*let's make ouple of changes to the input button as well*/
+button[type="submit"] { /*we can write selector rule this way as well, this way I'm targetting buttons which has type value as submit*/
+
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+/*we also need to make changes in the title of the form*/
+.widget-title {
+    font-size: 1.5rem;
+}
+
+/*most interesting part: I want to place the main section and the aside section in the same line as now main section is occupying the complete width so the first that I should do is *open main header section*/
+/*Now coming back from header section */
+aside {
+    display: inline-block; /*It's display should inline block*/
+    width: 21%; /*now after refreshing the aiside section will be bottom alinged*/
+    /*if you want that vertical aling should not be bottom it should be top instead*/
+    vertical-align: top; /*so we should set vertical align property to top*/
+    /*if you want you can give some margins from top as well, left margin to align it at its right place*/
+    margin-left: 4%;
+}
