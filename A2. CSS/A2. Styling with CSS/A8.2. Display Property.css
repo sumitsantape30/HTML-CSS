@@ -1,0 +1,49 @@
+#div1{
+	background-color: red;
+	height: 200px;
+	width: 200px;
+}
+
+#div2{
+	background-color: cyan;
+	height: 200px;
+	width: 200px;
+	margin-left: -4px; /*give this margin only after studying inline-block*/
+}
+
+/* Now in output you can see these two div that we have are coming new line(nextLine)
+so as div1 is block element so it is occupying the complete line similarly div2 is also occupying the conplete block*/
+/*so this was block level and inline elements*/
+
+
+/*so every element in HTMl has some default display value for eg. span tag, image tags these all are inline by default and div para headings are block by default so if you to alter the display value of an element you can do that.
+let's say i want to alter the value of all spans here, for now I'm applying type selector here I can do that using display*/
+span{
+	display: block; /*after this you can see that text1 and text2 are in two different lines coz all the spans now are block level elements*/
+	/*so you can make any element inline or block just use display property*/
+}
+
+/*now let's make the same with divs as well*/
+/*div{
+	display: inline;
+	/*so now in output, as we made divs inline so now div1 and div will be next to each other but this won't happen they'll actually get vanished*/
+	 /*coz their height and width is now 0, coz height and width are not working coz we have made divs inline so for an inline elment you cannot set its height and width*/
+     /*coz inline elements are expected to behave this way, they're inline means they'll occupy only that much space that is required for them*/
+    /*so because divs are empty here, they don't have anything content in them so which is why they are not occupying any space that's why height and width are not working which why they are 0 you can check by inspecting
+    also if you have an inline element or you set it to online you should know that you can't set their height and width property, you cannot give vertical mergin and padding as well 
+     so there are the limitations of inline*/
+     /*so to see your divs add some content inside the div, don't keep them empty completely so add abcd and defg in divs*/
+    /*so now in output the height and width will be that much that is required for the content, so height and width is adjusted according to the content this is because they are inline*/
+/*}  */   
+
+
+ /*Now I want the two divs that I have should appear inline but i want the flexibility to control their height, width and megins as well that means i want advantages of inline as well as block as well*/
+/*so in that case there's 3rd display property available and that's inline block*/
+div{
+	display: inline-block;
+	/*as the name says inline block that means you have the flexibility of inline as well as block, flexibilty of inline means they won't block the complete width of the line and flexibility of blok means you can alter their height width and vertical margins*/
+    /*so in output they'll be next to each other but you should notice that, ideally they both should be adjacent to each other competely without any margin between them but in output there will be some margin already added (roughtly 4px margin, which is already added) this is because you have mede it inline
+    so if two words are inline there's some word spacing between them so think these two divs are word1 and word2 so now when you wan two words to be adjacent there will be space between them, browser adds this space automatically
+    if you want that this margin should not be there, give some negative margin to the 2nd div, margin-left: -4px*/
+    /*Now both divs will be next to each other */
+} 
