@@ -1,3 +1,5 @@
 So here I have div and within that div I have 3 divs so there's id for an outer div and within outer div I have 3 inner divs
 
-*open Book*
+*open Book, see, and come back*
+so position static means  elements will be placed at the position where it is supposed to be, all the elements have position static by default.
+next is relative, means element will be positioned relative to its normal positon 
