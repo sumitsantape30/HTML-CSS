@@ -1,5 +1,40 @@
 So here I have div and within that div I have 3 divs so there's id for an outer div and within outer div I have 3 inner divs
 
 *open Book, see, and come back*
-so position static means  elements will be placed at the position where it is supposed to be, all the elements have position static by default.
-next is relative, means element will be positioned relative to its normal positon 
+1. so position static means  elements will be placed at the position where it is supposed to be, all the elements have position static by default.
+2. next is relative, means element will be positioned relative to its normal positon. Suppose I chose a div and I set it's postion as relative now after we have set position as relative you can give the top right bottom distance mens how much distance you want from the top element to be, how much ditance from bottom you want that element to be, right and left.
+so here position is relative and I specify left value to be as left:20px so ideal(original) position of that div is in left side of complete screen now after specifying 20px left that div will move 20px to left from its normal position so element will shift. So if I give top as well then element will shift some point from the top also with respect to its normal position.*see CSS code for relative and come back*
+3. Absolute: The absolute is positioned with respect to to the first positioned parent, if second wala is the inner div I'm talking about and I want this div to have position absolute then while positioning it I will actually be specifying its position relative to it's parent so now parent of this second inner div is outer div so this div should be as well so I'll set relative positon of the outer div and then I'll specify relative positon for the inner div
+so whatever the top left whaterve the values i'll be specifying they'll be with respect to the parent now *go back to the code*
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Position Property.css">
+</head>
+<body>
+
+    <div id="outer-div">
+        <div id="div1">
+        </div>
+        <div id="div2">
+        </div>
+        <div id="div3">
+        </div>
+        <div id="div4">
+        </div>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+    </div>
+
+
+    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+
+
+</body>
+</html>
+
