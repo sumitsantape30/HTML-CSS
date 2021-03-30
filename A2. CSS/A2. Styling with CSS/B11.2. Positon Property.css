@@ -1,0 +1,54 @@
+
+html{
+    font-size: 30px;
+}
+
+/*1. so this outer is the main div which contains 3 inner divs and a paragraph so now I'll set position of div2*/
+#outer-div{
+    border: 2px solid black;
+    margin: 20px;
+
+    /* 4. I'll set the psotion value of outer div as relative and now also set the position value of inner div to the absolute*/
+    position: relative; 
+}
+
+
+#div1{
+    height: 200px;
+    width: 200px;
+    background-color: #393a7b;
+}
+
+
+#div2{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    /*2. I want to set position as relative and I'll specify some distance from left*/
+    /*position: relative;*/  /*so in output you'll see that, image where it was supposed to be it'll move by 20 units from its normal position*/
+    left: 20px;
+    /*2.Now I'll specify top as well*/
+    top: 20px; /*so in output it'll shift 20px from left and top as well*/
+    /*3.the original position will be blocked now, this will no the be allocated to any other element on the page so space wise this area will be blocked.*/
+    
+    /*5. Now I'll set the position value of inner div to absolute*/
+    /*position: absolute;*/
+     /*6. so as we have specified left and top to be 20px so these left and top are now with respect to the positioned parent
+       so in output inner will be 20px from top and 20px from left with respect to the parent*/
+    /*point to be remember, the element does not actually reserve any space in the page layout but when it was relative we were reserving the space in the page layout but now its absolute we are not reserving any space.*/
+      /*so in output you can see div2(range) is floating above div1(blue) so this is relative with the parent, In case I would not have specified the relative positon for the div then it would have been positioned with respect to body because then the ultimate parent would have been body*/
+
+    /*7. Now for fix position property, as the name says fixed that means this element will actually stick to the viewport at this location*/
+    /*position: fixed;*/ /*so 20px top and left with respect to the viewport, it'll will be fixed even after scrolling only rest of the elmenets will be scrolled but this div will be at the same place. */
+
+    /*8. sticky: you can think of sticky as a combination of relative and fixed */
+    position: sticky; /*Now in output you can see the element is positioned relatively the way it should be. now when you scroll the element after a particular point this element sticks or bahave as being fixed but this is fixed only w.r.t to the container, it'll fixed till you scroll the entire container(container was outer div)
+    so by inspecting if we set top to 100px now if you see the threshold value is more now, so the threshold value is decided by top so as soon as the scrolling difference beween the element and top of viewport is 100px this starts behaving as fixed and it sticks to this position.*/
+}
+
+#div3{
+    height: 200px;
+    width: 200px;
+    background-color: maroon;
+
+}
