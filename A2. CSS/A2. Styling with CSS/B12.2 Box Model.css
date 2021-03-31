@@ -1,0 +1,27 @@
+
+
+#div1{
+    
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    /*so now it looks like actaul width and height of the element is 200x200 you can check by inspecting*/
+    /*so now let's add border to the element*/
+    border: 2px solid blue;  /* border will be 2 in all four directions */
+    /*the height and width we have specified here are not the height width of the element but they are height and width of the content of the element and 2px border in all 4 direction*/
+    /* so the actual width and height of the element will be = 200width for the content and 2px and 2px in left and right direction so that means total width is 204px and total height is 204px (204px x 204px)*/
+    /* so if we talk about an height of an element then content+ the border + padding adds up to the actual size of the element */
+    padding: 2px; /*padding od 2px in all four directions*/
+    /*so total hieght= 200 + 4 + 4 = 208 so 208x208 will be the dimension */
+    /*so actual height= height of content area + Border (top & bottom) + padding
+    width= width of the content area + Border + Padding*/  /*so all this we have discussed is called content box model*/
+    
+    margin: 4px; /*Margins do not add to width and height, only border, padding and content is added up and not margins*/
+
+    /*there's 2nd box model as well, border box model. It simply says that when you are specifying height and width of an element then this will be the total height and width of an element that means it will include the border, padding, and content as well, so this is the overall value*/
+   /* Now we'll change the box model of this div to border-box and I can do that using the box-sizing property*/    
+	box-sizing: border-box; /*Now overall height and width is 200x200 only which is the height and width we have specified*/
+	/*so by inspecting you can check height and width of the content area will be adjusted accordingly to the padding and borders we have given*/ 
+	
+}
+
