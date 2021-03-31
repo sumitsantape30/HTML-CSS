@@ -1,0 +1,34 @@
+
+
+#div1{
+	/*1. so we have div here*/ 
+    height: 100px;
+    /*width: 50%;*/ /*2. the width is 50% of parent, the parent of this div is <body>, comment this width after 7th point*/
+    width: 100px; /*8. */ /*now open html code and add paragraph*/
+
+    /* 5. I don't want my width to be less than 150px */
+    min-width: 150px; /*the width of this particular div will no fall below 150px, post 150px there will be not reduction in the width*/ 
+    /*6. you can set min-width as well */
+    max-width: 250px; /*the max width of this div cannot be more than 250px*/
+    
+    /*7. similar are constraints with min and max height as well */
+    
+
+    /* 3. */
+    background-color: cyan;
+    border: 2px solid blue;
+    /*4.when now when you inspect and decrease the browser window then the dimensions of the width change according to the browser area we have as currently width is 50% of the window*/
+    /* so now I want to put a constraint on my div, I actually want that at any point it should be 50% of the browser area but but it should not be less than 100px, you can do that usig min-width. */
+    
+    /* 9. Now come back from html code and see output, you can see that the paragraph content is actually within the div, this scenario is the scenario of overflow */
+    /*overflow means that the actual content is bigger than the border(can say box), this overflow is visible to us so if you want to adjust this overflow scenario then there are multiple options you can play around with*/
+     /*so for this div I can have overflow property current value is visible*/
+     /*overflow: visible;*/ 
+    /*so in case you want that it should be hidden*/
+    /*overflow: hidden;*/ /*but in this you cannot see the content which is hidden*/
+    /*if you want there should be scroll bar automatically in case there's an overflow then you can use scroll*/
+    /*overflow: scroll;*/
+
+    overflow: auto; /* auto let's browser whether there has to be an overflow adjustment or not so it'll differ browser to browser, browser will decide what will happen in case of overflow there.*/
+}
+
