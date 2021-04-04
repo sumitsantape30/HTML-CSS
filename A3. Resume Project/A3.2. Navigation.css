@@ -1,0 +1,54 @@
+body{
+	margin: 0px;
+}
+
+/*Body header*/
+#body-header{
+	height: 65vh;
+	opacity: 0.8; 
+	background-image: url("D:/Web Developement/HTML/image/coder.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Horizontal list*/
+.horizontal-list{
+	/*1.Now I'll add the rules*/
+	list-style: none; /*the list style should be none (I don't want bullets)*/
+	/*2.there's some padding added to the list so I want to remove that*/
+	padding-left: 0px;
+	/*4. I want the entire list in centre*/
+	/*text-align: center;*/
+}
+
+/*5. but text aligning is the rule which i'll be using frequently so instead of writing it in horizontal-list i'll make a class corresponding to it*/
+/*so i'll make a general class corresponding to it just to make the text in center*/
+.text-center{
+	text-align: center; /*also apply the text-center rule html code in ul tag as well*/
+}
+
+/*3. so now we have to make display every list item as inline block. That means I'm talking about every list item indivisually */
+/*so all the list items within the horizontal list should have display as inline inline block*/
+.horizontal-list li{
+	display: inline-block;
+	/*so now you can see the list items are horizontal now but color and underline is still a problem*/
+	/*but list items are preety close to each other so i'll set the margins*/ 
+	margin: 0px 8px 8px 0px ; /*I don't want to play with top and bottom margins, I just want to add left and right margins*/
+} /*so all the list items having class as .horizontal-list will be affected*/
+
+/*so now for color, color is the property of anchor tag, we want to make the ralevant changes to the anchor tag*/
+.horizontal-list li a{ /*so all the anchor tags within the horizontal list*/
+	color: white;
+	/*but the text has some text decoration(uderline) by default so will make it none*/
+	text-decoration: none;
+	/*7. So now will dd transiton as well, so here I want transition on color ot be slow. and you can add trnsition on bottom border as well*/
+	transition: color 0.5s, border-bottom 4s; /*0.5 seconds */
+}
+
+/*6. when you hover/click over the icon there is slight color transition and it becomes underlined so we can add that*/
+.horizontal-list li a:hover{ 
+	color: lightgrey; /*I want to change the color to the lightgrey*/
+	/*now you can either add text-decoration or border bottom */
+	border-bottom: 1px solid white; /*white is the border that I'm setting*/
+}
