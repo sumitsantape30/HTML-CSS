@@ -1,0 +1,21 @@
+body{
+	/*1.generally body has margins added to it so we'll set them to 0px first, so that all the body margins are set to 0*/
+	margin: 0px;
+}
+
+/*2.now we have to add backround image to the header and set height as well so header is occupying certain section of viewport so i'll give height in terms of viewport*/
+#body-header{
+	height: 65vh;
+	/*4. now we can add some more properties to the image*/
+	opacity: 0.8; /*will make it less opac so that it gives visual bulrry effect*/
+	background-image: url("D:/Web Developement/HTML/image/coder.jpg");
+	/*3.after this entire image will not be visible so backround size I would like to be cover and backround position as centre*/
+	background-size: cover;
+	background-position: center;
+	/*Now image will cover the entire area*/
+
+	/*5. Now when you are scrolling theimpression background image has, is parallex that means when you are scrolling the image is not scrolling up its still at its position and its giving the impression that we are scrolling over the image so the property we will use is the background-attachment property and add attachment as fixed*/
+	background-attachment: fixed;
+}
+
+
