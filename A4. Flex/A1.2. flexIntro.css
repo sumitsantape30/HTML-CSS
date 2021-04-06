@@ -1,0 +1,10 @@
+#container{
+	height: 75vh;
+	width: 75 vw;
+	background-color: cyan;
+
+	/*Now if you want this div to have display flex or the layout of the div or the layout of the div to be a flex.
+	then set the dispaly property of this div*/
+	display: flex;
+
+}
