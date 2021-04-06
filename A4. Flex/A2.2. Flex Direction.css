@@ -1,0 +1,49 @@
+#container{
+	height: 75vh;
+	width: 75 vw;
+	background-color: lightgrey;
+	display: flex;
+	 /*1. flex is used to position elements across different directions horizontally or vertically.*/ 
+	 /*by default this elements are arranged horizontlly */
+	 /*so default direction is "row" direction so if you have to change then you can change using the property called flex direction*/
+    /*flex-direction: column;*/ /* in case you want them in columns or rows */
+/*    this can take another values as well called as row-reverse, this will reverse the direction flex in opposite than what it was before*/
+    /*flex-direction: row-reverse;*/
+    /*similarly there is also column reverse*/ 
+   /* the sequence in which these elements are appearing (not direction) depends on the way you have written them in the html code*/
+   /*	as we have put in order 1 2 3 4, so after reverse it'll be 4 3 2 1. so in case if you want to change that order you can to that as well*/
+    flex-direction: row;
+}
+/*2. so flex direction was the property tht we applied to the container and order is the property that you can apply to the child or an element.
+ and the default value for all container is 0*/
+#container div{
+	height: 200px;
+	width: 200px;
+}
+
+#div1{
+	background-color: cyan;  
+	/*3. so lets set order to 1. the default value for all container is 0 so initially all these 3 elements had order 0*/
+	order: 1;
+	/*and the elements with same order are placed according to the order they are placed in a html code*/
+/*    after this output 1 has gone to last because all the other 3 divs has values lower than 1, as their by default order value is 0 so they will come first
+*/}
+
+#div2{
+	background-color: red;  
+}
+
+#div3{
+	background-color: grey;  
+   /*4.now if you want to send 3rd div to the last then i'll set the higher values so that it gets at last*/
+
+}
+
+#div4{
+	background-color: brown;  
+	/*5. you can set negative order values as well.*/
+	order: -1;
+	/*-1 is lower than 0 so it'll come before divs with order value 0*/
+}
+
+  
