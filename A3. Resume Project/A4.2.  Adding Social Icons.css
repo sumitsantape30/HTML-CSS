@@ -1,0 +1,73 @@
+body{
+	margin: 0px;
+}
+
+/*Body header*/
+#body-header{
+	height: 65vh;
+	opacity: 0.8; 
+	background-image: url("D:/Web Developement/HTML/image/coder.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Horizontal list*/
+.horizontal-list{
+	list-style: none; 
+	padding-left: 0px;
+	/*2. will set the margin to 0*/
+	margin: 0px; /*we had to add this coz unordered list have some margins around them*/
+}
+
+.text-center{
+	text-align: center; 
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px ; 
+} 
+
+.horizontal-list li a{ 
+	color: white;
+	text-decoration: none;
+}
+
+.nav-menu li a{
+		transition: color 0.5s, border-bottom 4s; 
+}
+
+.nav-menu li a:hover{ /*so after this the underline which was comig below icons, won't be there*/
+	color: lightgrey; 
+	border-bottom: 1px solid white; 
+}
+
+/*1. will add some styling to the heading*/
+#my-name{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+/*2. social icons is the class and within this class there is list items then there's anchor tag and then there's image tag where I want to apply the styles to*/
+.social-icons li a image{
+	padding: 10px; /* the distance between 2 icons */
+	font-size: 1rem;
+	color: white;
+ 
+  /*so now we want, when you hover over the icon the icons actually should become circular. so for that all I have to do is add border-radius to them*/
+  	border-radius: 50%; 
+}
+
+/*so it will become circular but now I want there will be shadow around the icon when you hover over the icon*/
+
+.social-icons li a image:hover{
+	/*in order to add shadow you have to use box shadow*/
+	box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0,2);
+	/*for any element that you want to add shadow to, box shadow will take some values as input. 1. Horizontal offset- positive value of horizontal offset will indicate that we want more shadow towards the right.
+	if you need in left then shadow will caste in the left of the element, and if its 0 then its neutral
+	2. Vertical offset: it is for offset in vertical direction, positive for bottom and negative for top*/
+}
