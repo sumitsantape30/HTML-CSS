@@ -1,0 +1,62 @@
+#container{
+    height: auto; /*5. div5 was overflowing from the container for that I set height to auto*/
+    width: 75vh;
+    background-color: lightgrey;
+    display: flex;
+    /*flex-direction: row;*/
+    /*3. flex wrap property*/
+    /*the by default value of flex wrap is no wrap that mean all the children will be wrapped within the single line*/
+    /*flex-wrap: nowrap;*/
+    /*in case you want that they should be in multiple line then you can select wrap here.*/
+    /*flex-wrap: wrap;*/
+    /*4. now every div will take 200px that we mentioned*/
+
+    /*6. the way we have wrap here, we have wrap-reverse as well*/
+    /*so there are 3 values this property(flex-wrap) can take, nowrap(default), wrap( to enable it in multiple lines), and wrap reverse is to wrap the elements within the flex in reverse order*/
+    /*flex-wrap: wrap-reverse;*/ /*now 5 will be at top and so on */
+    /*experiment with it by changing the flex-wrap and flex-direction.*/
+
+    /*7. lets experiment with couple of vlaues*/
+    flex-direction: row-reverse;
+    /*flex-wrap: wrap;*/ /*now there will be two elements in one line. it'll put divs from right to left direction*/
+    /*now if I change flex wrap to wrap-reverse*/
+    flex-wrap: wrap-reverse; /*now it will start filling from bottom to top, and it'll fill from right to left*/
+    /*experiment with column as well*/
+}
+
+
+
+
+#container div{
+    height: 200px; 
+    width: 200px;
+    /*2. although we have set widhth of children to be 200px but we don't have that much space available for all the children so it tries to adjuct the children within one line.
+    that's why children are shrinked so effective width that every child gets is not200px it is 95x*/
+    /*so by default flex tries to put everything in one line if the flex direction is row or in one column if the direction flex is column so if you dont want that you can use flex wrap property.*/
+
+}
+
+#div1{
+    background-color: cyan;
+}
+
+
+#div2{
+    background-color: red;
+}
+
+
+#div3{
+    background-color: grey;
+}
+
+#div4{
+    background-color: maroon;
+}
+
+/*1. we have added the one more div*/
+#div5{
+    background-color: orange;
+}
+/*Now there are 5 divs in the sequence.
+*/
