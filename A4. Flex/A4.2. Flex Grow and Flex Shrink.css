@@ -1,0 +1,39 @@
+#container{
+    height: 500px;
+    /*width: 500px;*/
+    width: 300px; /*4. we have flex shrink as well, as the name suggests, it'll let elements shrink in case we don't have that much space available. so now change the width to 300px for now*/
+    background-color: lightgrey;
+    display: flex;
+
+    /*5. So now the width dimensions of the both the divs is 150. that means whatever the elements are there they shrink in equal proportion
+    ideally I wanted 400px as mentioned below so I have shortage of 100px, so it'll equally deducted from the dimensions of both. 50px from first div and 50px from second div*/
+    /*so by default shrink value is equal for both the divs. In case you want 1 div to shrink more in comparison to other div then you can specify the shrink value*/
+}
+
+
+#container div{
+    height: 200px; 
+    width: 200px;
+} 
+/*1. coz direction is row wise by default so each of the child div has a width of 200px so here 100px space is unoccupied in container. so flex actually gives us freedom to decide 
+that if there's space available you can adjust sizes of elements such that they occupy the whatever remaining space is there.
+you can do that with the help if flex grow property*/
+/*so this property will be applied to indivisual items within the flex container*/
+
+#div1{
+    background-color: cyan;
+    /*flex-grow: 1;*/
+    flex-grow: 4; /*4. now 4+1 is 5, so that means whatever space is available i.e. 100px now i'll split it into 5 parts, so each part will be 20px each so 4/5 out of these paths will go to div1 that means expected width of div1 should be 280px
+    and expected width of div 2 should be 220px*/
+
+    /*6. the way we have flex-grow we have shrink as well*/
+    flex-shrink: 4; /* so if 5 is what I have to deduct in total then 4 will be deducted from the width of 1st div and 1 part will be deducted from the width of 2nd div
+}
+/*2. so this flex grow signifies that you want the elment to be grow according to the space availability. and 1 we have specified is what the proortion of that it has to grow*/
+#div2{
+    background-color: red;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+/*3. now both the divs will occupy the space in equal proportion*/
+
