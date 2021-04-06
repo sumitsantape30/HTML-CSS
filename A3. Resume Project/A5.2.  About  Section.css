@@ -1,0 +1,89 @@
+body{
+	margin: 0px;
+}
+
+/*Body header*/
+#body-header{
+	height: 65vh;
+	opacity: 0.8; 
+	background-image: url("D:/Web Developement/HTML/image/coder.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Horizontal list*/
+.horizontal-list{
+	list-style: none; 
+	padding-left: 0px;
+	margin: 0px; 
+}
+
+.text-center{
+	text-align: center; 
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px ; 
+} 
+
+.horizontal-list li a{ 
+	color: white;
+	text-decoration: none;
+}
+
+.nav-menu li a{
+		transition: color 0.5s, border-bottom 4s; 
+}
+
+.nav-menu li a:hover{ 
+	color: lightgrey; 
+	border-bottom: 1px solid white; 
+}
+
+#my-name{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.social-icons li a image{
+	padding: 10px; 
+	font-size: 1rem;
+	color: white;
+ 
+   	border-radius: 50%; 
+}
+
+
+.social-icons li a image:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0,2);
+}
+
+/* Styling for about section */
+#about{
+	height: auto; /*height auto means it will adjust its height according to the requirement*/
+	width: 100%;
+	position: relative;
+}
+
+/*so my image is super large so I should adjust it properly*/
+#my-image{
+	height: 12rem;
+	width: 12 rem;
+	/*we want our image in center so margin: auto will help us achieve that*/
+	margin: auto;
+	/*Now we want some part of our image to be in top, that means give some negative margin to it*/
+	margin-top: -17vh; 
+	/*but even after this the image will come under the background, background image is over the main image for that I'll make the change in position of about section to relative*/
+}
+
+#my-image img{ /*image tag within my div should have height 100% and width too, this will set height and width according to parent*/
+	height: 100%;
+	width: 100%;
+	/*we want our image to be circular ao set border radius*/
+	border-radius: 50%
+}
