@@ -1,0 +1,137 @@
+body{
+	margin: 0px;
+}
+
+/*Body header*/
+#body-header{
+	height: 65vh;
+	opacity: 0.8; 
+	background-image: url("D:/Web Developement/HTML/image/coder.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Horizontal list*/
+.horizontal-list{
+	list-style: none; 
+	padding-left: 0px;
+	margin: 0px; 
+}
+
+.text-center{
+	text-align: center; 
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px ; 
+} 
+
+.horizontal-list li a{ 
+	color: white;
+	text-decoration: none;
+}
+
+.nav-menu li a{
+		transition: color 0.5s, border-bottom 4s; 
+}
+
+.nav-menu li a:hover{ 
+	color: lightgrey; 
+	border-bottom: 1px solid white; 
+}
+
+#my-name{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.social-icons li a image{
+	padding: 10px; 
+	font-size: 1rem;
+	color: white;
+ 
+   	border-radius: 50%; 
+}
+
+
+.social-icons li a image:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0,2);
+}
+
+/* 1 */
+section{
+	width: 100%; /*width of the section will be 100% width of the parent*/
+	height: 75vh;
+	display: flex; 
+	flex-direction: column;
+	align-items: center;
+}
+
+/*as every section has same color, so you decide the color of the section by using id of that section and then write down the backround color otherwise write down the CSS rule in a better way*/
+ 
+section:nth-child(2n) {/*2n child is every second child, multiples of 2*/
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) { 
+    background-color: white;
+}
+
+
+.section-heading {
+    width: auto;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+.section-heading span {
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+/* Styling for about section */
+#about{
+	height: auto; 
+	width: 100%;
+	position: relative;
+}
+
+#my-image{
+	height: 12rem;
+	width: 12 rem;
+	margin: auto;
+	margin-top: -17vh; 
+}
+
+#my-image img{ 
+	height: 100%;
+	width: 100%;
+	border-radius: 50%
+}
+
+/*Skills Section*/
+
+.skills-display {
+    width: 70%; /*i want width of this div should be 70% of the complete portion*/
+     /*border: 2px solid black; we added border just to check but in real we won't add it*/
+    /*height: 100px; also add height just to check*/
+    /*I want heading and everything in center so add align items property in section{}*/
+    display: flex; /*the display of these skills should be flex*/
+    /*and number of skills should adjust according to the dimensions so use flex-wrap property and set it to wrap so that they can wrap accordingly*/
+    flex-wrap: wrap;
+
+    /*and I would want that spaces between the skills should be even so i'll set justify content to be space between*/
+    justify-content: space-between;
+    /*now whatever the skills we'll add, they will adjust themselves accordingly*/
+    /*open html to add skill*/
+}
+
