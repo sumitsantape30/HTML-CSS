@@ -1,0 +1,54 @@
+#container{
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+    display: flex;
+    /*1. lets use justify-content propery, this property can take 5 different values*/
+    /*justify-content: flex-start;*/ /*this is default value as well. so all the items within the flex, their alignment will be towards the start of the flex*/
+
+    /*after flex-start we have flex-end, this will algn all the items towards the end of the flex*/
+    /*justify-content: flex-end;*/
+
+    /*we have center as well*/
+    /*justify-content: center;*/
+
+    /*next value is space-around*/
+    /*justify-content: space-around;*/ /*it will try to achieve equal space around every element. So in case you want space around the elements should be equalthen we should use space around */
+    /*justify-content: space-between;*/ /*when we used space-around the space between the elements may not be equal so if you want equal space between the elements(and not around, it will not care about space around the elements but it will care space between the elements) you can use space-between. */
+    /*by default here, flex direction is row so lets change flex direction to column*/
+
+    /*flex-direction: column;*/ /*by default it was row now we changed it to column*/
+    /*and try to change the justify-content property in all 5 */
+    /*justify-content: flex-start;*/ /*the beginning will be from top*/
+    /*justify-content: flex-end;*/ /*now all the elements will move the end*/
+    /*justify-content: space-around;*/
+
+    /*now lets make direction as column reverse and flex start*/
+    /*flex-direction: column-reverse;*/ /*column-rverse means direction is from bottom to top*/
+    /*justify-content: flex-start;*/
+
+    /*you can use it with flex wrap as well*/
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    /*wrapping will start in reverse direction and it will be in the right end*/
+}
+
+
+#container div{
+    height: 100px; 
+    width: 100px;
+} 
+
+#div1{
+    background-color: cyan; 
+}
+
+#div2{
+    background-color: red;
+}
+
+#div3{
+    background-color: grey;
+}
+
