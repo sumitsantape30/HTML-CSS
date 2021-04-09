@@ -1,1 +1,110 @@
+you can see the skills section, it is adjusting according to the space available after contracting. so there are 2 sections in skills, first is heading and then second is skills. so we can use flex here.
+so flex wrap property is something that we can use here so that it actually tries to wrap itself in multiple lines. so flex-wrap is the property that we will use here.
+Portfolio section as well behaves in the same manner
+and in contact section as well there are 2 big section which are placed in a similar one line so we can use flex to align these two here. It's not necessay to use the flex we use flex because it gives us a lot more flexibility along placing items together, whether you want spaces equal between them, whether you want equal spaces around them so flex help us achieve all these flexibility.
+so for all the sections I'll use flex
 
+
+body{
+	margin: 0px;
+}
+
+/*Body header*/
+#body-header{
+	height: 65vh;
+	opacity: 0.8; 
+	background-image: url("D:/Web Developement/HTML/image/coder.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+/*Horizontal list*/
+.horizontal-list{
+	list-style: none; 
+	padding-left: 0px;
+	margin: 0px; 
+}
+
+.text-center{
+	text-align: center; 
+}
+
+.horizontal-list li{
+	display: inline-block;
+	margin: 0px 8px 8px 0px ; 
+} 
+
+.horizontal-list li a{ 
+	color: white;
+	text-decoration: none;
+}
+
+.nav-menu li a{
+		transition: color 0.5s, border-bottom 4s; 
+}
+
+.nav-menu li a:hover{ 
+	color: lightgrey; 
+	border-bottom: 1px solid white; 
+}
+
+#my-name{
+	font-size: 3rem;
+	letter-spacing: 0.1rem;
+	color: white;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.social-icons li a image{
+	padding: 10px; 
+	font-size: 1rem;
+	color: white;
+ 
+   	border-radius: 50%; 
+}
+
+
+.social-icons li a image:hover{
+	box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0,2);
+}
+
+/* 1 */
+section{
+	width: 100%; /*width of the section will be 100% width of the parent*/
+	height: 75vh;
+	display: flex; 
+	flex-direction: column;
+}
+
+/*as every section has same color, so you decide the color of the section by using id of that section and then write down the backround color otherwise write down the CSS rule in a better way*/
+ 
+section:nth-child(2n) {/*2n child is every second child, multiples of 2*/
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1) { 
+    background-color: white;
+}
+
+
+/* Styling for about section */
+#about{
+	height: auto; 
+	width: 100%;
+	position: relative;
+}
+
+#my-image{
+	height: 12rem;
+	width: 12 rem;
+	margin: auto;
+	margin-top: -17vh; 
+}
+
+#my-image img{ 
+	height: 100%;
+	width: 100%;
+	border-radius: 50%
+}
