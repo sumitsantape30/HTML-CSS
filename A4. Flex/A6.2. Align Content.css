@@ -1,0 +1,55 @@
+#container{
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    /*1.So I want to use align-items*/
+    /*align-items: flex-start;*/ /*so now direction is row means towards right so align-items will work on the cross axis means in bottom*/
+    /*align-items: flex-end;*/ /*flex end will bring all the elements to the end of the cross axis (means at bottom)*/
+
+    /*align-items: center;*/
+
+    /*next property is stretch, this is the default values actually*/
+    /*align-items: stretch;*/ /*default value of align items is stretch and it tries to stretch all the elements across the cross axis*/
+    /*2.they should have stretch the elements to complete height of the container but they're not coz we have specified the height value of all 3 divs as 100px 
+    and stretch respects the height dimensions so if you have specified that height has to be 100px it will be 100px so we can see the effect of strach by setting height to auto*/
+    /*now after making height to auto all of them will stretch to containers height.*/
+
+    /* 4. if the flex direction was column then elements would have stretched across their widths coz cross axix would have been along the width */
+	 /*align-items: baseline;*/ /*6. set margins to div*/
+	 /*so it'll align all the items across the baseline*/
+
+	 /*it gets more interseting if you use justify content and align items together, let's say i want to place all these div to the center. (center as horizontally as well as vertically)*/
+	 align-items: center; /* comment all the margins */
+	 justify-content: center;
+}
+
+
+#container div{
+    /*height: 100px;*/ 
+     /*3.auto lets the flex to decide the height of the children.*/
+    /*when we use auto and we want to put contrants on maximum and minimum height, we can do that using min-height and max-height property as well*/
+    /*max-height: 400px;*/ /* I want to stretch the items but not beyond the 400px */
+   
+   /*5. lets set it back to 100px and study baseline*/
+   height= 100px;
+    width: 100px;
+} 
+
+#div1{
+    background-color: cyan; 
+    /*7. set magins to all the divs*/
+    /*margin: 10px;*/
+}
+
+#div2{
+    background-color: red;
+    /*margin: 30px;*/
+}
+
+#div3{
+    background-color: grey;
+    /*margin: 50px;*/
+}
+
