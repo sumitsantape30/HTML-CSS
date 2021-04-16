@@ -1,0 +1,11 @@
+#container{
+    width: 50px;
+    height: auto;
+    border: 2px solid black;
+    /*now, as width of div is fixed the text is overflowing out of div, in case you dont want words to flow outside .
+    we want them to adjust themselves according to the space we have you can use the overflow property*/
+    overflow-wrap: break-word;  /*we'll break the words so that they can adjust themselves accordingly*/
+    /*so now the words which were overlflowing are now wrapped up within its boundary*/
+/*    you can use word-wrap or overflow-wrap, overflow-wrap has 2 values, first is normal( it'll stay as it is, you dont have to do anything eve if the words are over flowing out of the box let them be), you can use break-word in case you want to allign 
+*/
+}
