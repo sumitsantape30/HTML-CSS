@@ -1,0 +1,29 @@
+so before is adding content before the heading and after is adding content after the heading so whatever is the content of the element before and after add content before and after that elements content.
+so now after the content I want to end it with an icon.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    <link rel="stylesheet" type="text/css" href="Overflow_Wrap.css">
+
+</head>
+<body>
+
+
+    <!-- <p class = "styled-first-letter"> learn about pseudo elements </p>
+	<p> learn about pseudo elements </p> -->
+    <p> Heading </p>
+
+    <!-- other usecase than adding icon is  -->
+    <p> learn about pseudo elements </p>
+    	<!-- we have some list items -->
+    <ul>
+        <li> List Item </li>
+        <li> List Item </li>
+        <li> List Item </li>
+    </ul>
+</body>
+</html>
