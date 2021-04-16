@@ -1,0 +1,31 @@
+so cliking on lightbox should actually make a dialogue or lightbox kind of a thing visible to you and when you click on X it should go back.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+
+    </title>
+    <link rel="stylesheet" type="text/css" href="Overflow_Wrap.css">
+
+</head>
+<body>
+
+	<!-- will enclose the LightBox within this div -->
+    <div>
+        <a href="#lightbox"> LightBox </a>
+    </div>
+
+    <!-- the actual lightbox dialogue that has to appear is in this div -->
+    <div id="lightbox">
+
+    	<!-- we need cross(X) it's a a tag actually which will take you to root -->
+        <a href="#"> X </a>
+        <p> Lightbox content </p> <!-- whatever content you want to put you can put here now we'll keep it simple -->
+
+       <!--  currently both of them will be visible as we did not make change in CSS part so open CSS code -->
+
+    </div>
+
+</body>
+</html>
