@@ -1,0 +1,15 @@
+
+/*2. if paragraph is active, we can set backround color to cyan*/
+p:active{
+	background-color: cyan;
+}
+
+/*1. Now i'll add link active state to the anchor tag*/
+a:active{ /*if the link is active then color should change to red so after clicking the button it will turn to red*/
+	color: red;
+}
+
+/*if the link is visited we tend to give different colors*/
+a:visited{
+	color: green;
+}
