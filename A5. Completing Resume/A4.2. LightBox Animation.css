@@ -1,0 +1,21 @@
+#lightbox { /*1.the height and width of this should be 0*/
+    height: 0;
+    width: 0;
+    position: fixed; /*pos should be fixed coz I wanted to appear over other elements*/
+    top: 0;
+    left: 0;  /*0 from both left and top*/
+    overflow: hidden; /*we'll also hide it*/
+
+    /*3.*/
+    transition: all 2s ease-in-out; /*all- all the propperies should participate in the transition and it should take 2 seconds and eas n out is transitio type*/
+}
+
+/* 2. next thing we have to do is we have to make it appear somewhere after clicking lightbox*/
+/*this is target*/
+#lightbox:target {
+    height: 30%;
+    width: 30%;
+    top: 25%;
+    left: 25%;
+    background-color: lightgrey;
+}
