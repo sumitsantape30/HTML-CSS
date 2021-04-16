@@ -1,0 +1,23 @@
+you can think of pseudo class as a keyword that is used to select element along with the selector based on a specific state. if you hover over the element we'll be able to specify what properties that element should have the point we hover over it.
+similarly there are other pseudo classes.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<link rel="stylesheet" type="text/css" href="Related_Pseudo_Classes.css">
+
+</head>
+<body>
+
+		<!-- so here we have a small paragraph and this has a link -->
+	<div id ="container">
+		<p> Click  <a  href="https://www.google.com" target="_blank"> google </a> to search.</p>
+	</div>	
+		
+
+</body>
+</html>
