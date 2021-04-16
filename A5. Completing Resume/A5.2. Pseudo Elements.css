@@ -1,0 +1,37 @@
+
+/*2. put styled-first-letter instead of p tag*/
+.styled-first-letter::first-letter{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}  /*just like we have first-letter we have first-line as well*/
+
+p{
+    background-color: lightgrey;
+}
+
+/*1.
+p::first-letter{ we'll select a para and I want to apply this style only to first letter
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: capitalize; we want to capitilize it so text transform
+}  so in output you can see first letter is bigger in size*/
+
+/*3. Before and after pseudo classes are use to add content before/after the content of the element. Content or a virtual element*/
+p::before{
+	/*lets add some content to it*/
+    content: 'Before';
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/*the way we have before we have after as well*/
+p::after{
+    content: 'After';
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/*so whatever content of element you have and you want to add something before that or want to apply something after that you can do that before and after pseudo elements*/
