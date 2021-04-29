@@ -1,0 +1,8 @@
+1. Responsive Web Design: you want that website should adjust itself according to the different screen size then you write CSS rule to control that.
+2. Dynamic Serving: if you open the actual amazon website  on the mobile it will look different from the one you are seeing on desktop. 
+server identifies which from which device the request is coming from and what files and what views do I have for that particular device so server will send only those files which are relavant to that device type.
+but in Responsive Web Design the html/css code is same  whether you are opening it on mobile or desktop the code is same.
+
+Problems with dynamic Serving: you have to maintain multiple files 
+
+3. Separate mobile websites: so have a separate website with a different URL for a dedicately designed for mobile only. eg for facebook it is : m.facebook.com , m.youtube.com
