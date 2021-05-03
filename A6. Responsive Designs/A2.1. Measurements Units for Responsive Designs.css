@@ -1,0 +1,25 @@
+html{
+	font-size: 30px;
+}
+
+/*Now the layout is not adjusting itself according to the requirement so the layout that we have currently is a fixed Layout.
+*//*Fixed Layout means no matter what screen size is the layout is fixed and it will look this way only */
+/*so from responsiveness prespective this is not a good layout, ideally I should have whatever the screen size is I should be able to see the complete content for the entire paragraph so that we dont have to scroll horizontally.
+we can do that by using a relative unit here*/
+
+#div1{
+	/*width: 1100px;*/ /*using percentage instead of px*/
+	width: 60% ; /*I want that the div should occupy 60% of the entire width, so now it wont be fixed it will vary according to the browser size */
+	/*so using relative unit here to get the achieve the responsiveness will make much more sense*/
+	/*and the layout that we have currently using this relative unit is fluid layout*/
+	padding: 5px;
+	border: 1px solid black;
+
+	/*fluid layout is termed as fluid measurements that means we use relative unit. so the fluid layout that we achieved is using %, you can use vw,vh to get this.
+	there are couple of challenges that you face with fluid layout as well, if you see a same design on a smaller screen then 60% might not look good or viewing the same design on a wider screen then 60% might pixalate the image so in that case I'm as a designer not sure that whatever design I'm seeing on my screen user will see the same design that ways 
+	so generally while using % you use min-width or max-width accordingly(specially in case of images) so that they dont pixalate or shrink a lot so we design in min-width or max-width so you have to be careful while using fluid measurements*/ 
+    /*so you are taking care, that it will look good on all screens*/ 
+    /*other units you can use are rem,em. we use this in perspective of text size or font size*/
+    
+
+}
