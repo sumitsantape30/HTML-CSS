@@ -1,0 +1,29 @@
+Media queries were introduce in CSS3 and the reason they are there because they give designers lot more flexibility and freedom and control to decide which CSS rule should apply based on the divice type and devide proprty. 
+for eg if device width is 600px or smaller then I can decide that hey this the set of CSS rule that should apply but if devide width is 1000px that means its widest screen relatively then there should be different set of CSS rule that should apply.
+so this is what we can control using the media queries.
+
+How to write media query? Every media query will have two components 
+1. First compnonent is the media type (you can specify which type of media it is)
+  : is it a screen
+  : or you are targetting the print mode
+  : or it is speech.
+  : or all
+
+2. Next is media property, here you will be specifying the media property that you want to focus on.
+eg. i) I want to focus on the width of the device.
+    ii) or height is what you want to focus on
+    iii) resolution
+   or screen orientation and there are other propoerties as well.
+
+The way we can write a media query: @media (to indicate that it is a media query)
+                                    @media screen (screen is the type, if I want that this query should apply on screen)
+                                    
+                                    @media screen and (max-width: 600px): {
+                                    
+                                            }
+                                    so lets say I want to say that if it is a screen and the width is less than 600px then this is the rule that should apply, so we can write media queries this way
+                                    this is the statement combined with and, and is an operator both the condition should be true only then and will be true. Width should be less than equal to <= 600px and it should be a screen, then we'll apply these rules, rules which are written within the bracket.
+
+===============================================================================================================================================================================================================================================================================================================================
+                                      
+                                      
