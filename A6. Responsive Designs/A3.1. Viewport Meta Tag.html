@@ -1,0 +1,17 @@
+<!-- Viewport is the area of window where the web content can be seen basically the visible area of the webpage.
+
+We can also see it in mobile mode on browser. so to get this view means so render the page on a 360px screen what browser does is, it first renders the page on a virtual viewport. This virtual viewport is generally wider than the target devide(mobile) that you actually want to render the page on. So when it is rendered on the virtual viewport and it is zoomed out continuously to a point till it fits the desired size(mobile) so this is how actually browser is working.
+why doesnt browser directly renders it to the actual device you want to see on? so this is browsers attempt, the site that are not optimized for the mobile view should look better on a mobile device. so browser feels that rendering it on a virtual viewport and zooming outwill give a better view.
+but this is not always successful and we dont want that in majority cases so we should not rely on browser to do this for us (to optimize the site on a mobile device) you should handle it on your own using a combination of vieport meta tag and media queries.
+ -->
+html{
+	font-size: 30px;
+}
+
+#div1{
+	width: 60% ; 
+	padding: 5px;
+	border: 1px solid black;
+
+}
+
