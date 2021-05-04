@@ -1,0 +1,27 @@
+html{
+	font-size: 30px;
+}
+
+#div1{
+	width: 60% ; 
+	padding: 5px;
+	border: 1px solid black;
+}
+
+/*2. Dont write this media query below 600px wali media query so that It can first acquire 90% and then 100%*/
+@media screen and (max-width: 900px){ /
+	#div1{
+		width: 90%; 
+	}
+}
+
+/*1. so now paragraph is occupying 60% of page width.
+Now the page width is currently narrow and 60% of narrow screen is even narrower so I want that, if the screen width is less than 600px then this paragraph should occupy the complete screen width and not 60%.
+so we can write the media query for the same*/
+
+@media screen and (max-width: 600px){ /*if this happens means if widhth gets less than 600px then this rule should apply*/
+	/*the rules that I want to apply are*/
+	#div1{
+		width: 100%; /*width of div instead of 60% it should be set to 100%*/
+	}
+}
