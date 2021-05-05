@@ -1,0 +1,43 @@
+/*html{
+	font-size: 30px;
+}*/
+
+#div1{
+	width: 100% ; /*2. Initially I'll say this wil occupy 100% of the screen, coz on a mobile I want it to occupy 100% of the screen width*/
+	/*so I'm keeping in mind the screen at which user will be looking on will be s mobile device so if it is a mobile devide the div should take 100% of the screen width*/
+	padding: 5px;
+	border: 1px solid black;
+}
+
+/*@media screen and (max-width: 900px){ 
+	#div1{
+		width: 90%; 
+	}
+}
+
+@media screen and (max-width: 600px){ 
+	#div1{  
+		width: 100%; 
+	}
+}*/
+
+/*
+1. Now i'll think that if my website is to appear on a mobile device then how's it going to look.
+*/
+
+/*3. Next i'll think in a increamental stage, i'll think now if screen is increased what should be the size of the div? and if I keep on increasing the screen size what should be the effect on the size of the div
+*/
+
+/*4. if screen width is 400px or less then it should occupy 100%, if screen width is 900px or less then it should be 80% and above 900px it should be 60%*/
+
+@media screen and (min-width: 600px){
+	#div1{
+		width: 80%; /*initially it was 100% then it will change to 80%*/
+	}
+}
+
+@media screen and (min-width: 900px){
+	#div1{
+		width: 60%; 
+	}
+}
