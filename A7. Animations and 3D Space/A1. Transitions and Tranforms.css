@@ -1,0 +1,47 @@
+We have already seen this 2 CSs properties but will discuss them again.
+
+div{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: black;
+	/*transform: rotate(120deg);*/ /*1.you have to specify the degree by which you want to ratate the element*/
+	/*transfor is used to tranform different properties of an element like you can rotate scale etc an element*/
+    /*if you secify the degrees in -ve it will rotate in anticlockwise direction*/
+
+    /*in case you want to rotate only x axis or y axis value you can do that as well
+    transform: rotateX(120deg);*/
+
+    /*transform: scale(1.5); *//*you need to specify the scale value*/
+   /*here we want to scale by 1.5 its previous size*/
+
+   /*you can scale x or y, or you can specify different vertical and horizontal scale as well*/
+   /*transform: scale(1.5, 0.4); */
+
+   /*next tranform property is you can translate, you can specify the distance through which you want to translate*/
+   /*transform: translate(100px);*/
+
+   transform: translate(100px, 100px); /*you can specify x and y translates as well or you can specify separately as well*/
+   /*you can also specify the translation value in %*/
+
+   /*Transition */
+   /*transition is used to animate the property change over a period of time so all you have to do is specify the duration of transition*/
+   /*transition: 1s ease-in-out;*/ /*you have to specify the timing and timing function howdo you want the trnasition to happen*/
+   /*so beginning and ending of transition should be smooth so that will be ease-in-out*/
+
+   /*3. you can specify even a particular property to apply transition to*/
+   transition: height 1s ease-in-out; /*I want to apply transition to height and not to width*/
+   /*by default its value is 'all' that means it was applying transition to all the proper*/
+
+   /*another value you can specify here is you can specify delay value*/
+   transition: height 1s ease-in-out 0.5s; /*i want to start transition 0.5 second after I hover over the element*/
+}
+
+/*2.now I want div on hover actually want to apply transition*/
+div: hover{
+	height: 400px;
+	/*so when you hover over the element there is transition in height happening*/
+	width: 400px; /*if you want to hover both height and width */
+}
