@@ -1,0 +1,25 @@
+We will add some animation, when you hover over the div some animation/transition is happening. There is change in properties and we want to show it.
+
+
+div{
+
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: black;
+	/*transition: 1s ease-in-out;*/ /*1.ease in out means transition will start smoothly and will end smoothly*/
+    /*transition: 1s linear;*/ /*linear means tranisiton will take place linearly*/
+
+    /*3. you can also experiment with timing functions, steps is a timing function which executes animation in steps*/
+    transition: 1s steps[6, end]; /*I want to exectue 4 steps in total till I reach the end of the animation*/
+    /*if you want it to be qucker then you can increase the number of steps*/
+}
+
+/*2. Now we need to think what all properties do we have to apply transition to. 
+so there are 2 things happening, div is growing in size and moving some distance*/
+div:hover {
+	/*use transform and apply transform to scale and there is trnaslate heppening as well, and trasltation is happening is only x direction*/
+	transform: scale(1.5) translate(150px); /*so you can specify 2 properties like this just separate them by space.*/	
+}
