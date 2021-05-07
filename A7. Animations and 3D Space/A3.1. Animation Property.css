@@ -1,0 +1,58 @@
+CSS has animtion property using which we can using which we can create intersting animation.
+
+
+div{
+
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: black;
+
+	/*1.animation property*/
+	/*you have to supply some values here, first being the animation name, so for now we have to pass its name next thing we have to pass is its duretion and timing function then you have to provide number of times you want to run this animation*/
+	/*animation: changeShape 1s ease-in-out 2;*/ /*the animation we'll be creating is to change the shape of rectangle*/
+   /*you can put infinite as well instead of 2 that means animation will keep running*/
+    
+    /*3. if you want transition from circle to square to be smooth and vice verse you can specify value alternate here*/
+    animation: changeShape 1s ease-in-out 4 alternate;
+
+    /*you can also play with different timing functions values*/
+    /*ease-in-out means transition will start smoothly and end smoothly as well, there can be transition taking place in linear manner.
+    there can be ease-in that means transition starts smoothly and then just ends. there can be ease-out transition starts normally and then end smoothly*/
+    /*other than this there is cubic-bazier timing function in case you want more curve to the way your transition along your animations*/ 
+
+    /*7. this animation property is the short hand property, instead of this "animation: changeShape 1s ease-in-out 4 alternate;" you could have mention the indivisual properties as well.*/
+   
+}
+
+/*2. now we have to create animation*/
+@keyframes changeShape{
+/*now we'll be using key frames here, you can think of key frame as representing the states of an animation. like intially our div is in sqaure and in later state it is in circle state and in between will be transition states.
+*/	
+   from{ /*instead of from you can write 0% as well*/
+   	/*in from we specify the initial state*/
+   	border-radius: 0%; /*so intially radius will be 0*/
+   }
+
+    /*6. if 25% animation is done border radius should become 12.5%*/
+    25%{
+    	border-radius: 12.5%;
+    }
+    
+    /*5. you can specify those values in between*/
+    50%{
+    	/*once if the 50% animation is done border radius should be 25%*/
+    	border-radius: 25%;
+    }
+
+   /*2.*/
+   to{ /*instead of to you can write 100% as well*/
+   	/*here we specify the final state of an animation*/
+   	border-radius: 50%; /*final state is that final radius should be 50%*/
+   }
+
+   /*4. so in this animation we have specified only 2 values "from" and "to". In case you want like if 25% of animation is done I want to do this or if my 50% of animation is done I want to do this so you can specify the indivisual states as well*/
+
+}
