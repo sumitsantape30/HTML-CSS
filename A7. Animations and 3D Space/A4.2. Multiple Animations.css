@@ -1,0 +1,66 @@
+div{
+
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: black;
+
+    /*animation: changeShape 1s ease-in-out 4 alternate;*/
+     /*3. will specify the properties indivisually*/
+     animation-name: changeShape, rotate, reduceSize ; /*there are 3 animations that you want to use so you'll have to specify their name separated by comma.*/
+     animation-duration: 0.8s, 0.8s, 0.5s; /*how long you want to run each of them, you can specify different durations. if you want one animation to run longer than other then you can specify different durations as well*/
+     animation-iteration-count: infinte, infinite, infinite ; /*how many times you want to run them so for now I want to run them for infinite number of times, you can specify different values for all 3 of them*/
+     animation-direction: alternate, alternate, alternate; /*it should be alternate for all 3 of them*/
+     
+}
+
+@keyframes changeShape{
+ 
+
+   0%{ 
+   	border-radius: 0%; 
+   }
+
+    25%{
+    	border-radius: 12.5%;
+    }
+    
+    50%{
+    	
+    	border-radius: 25%;
+    }
+
+   100%{ 
+   	border-radius: 50%; 
+   }
+}
+
+
+/*1. by creating 3 different animations I can use them indivisually as well so we need to create 2 more animations*/
+
+@keyframes rotate{ /*for rotate*/
+
+	from{
+		transform: rotate(0deg);
+	}
+
+	to{
+		transform: rotate(360deg);
+	}
+} /*this is animation for rotation*/
+
+@keyframes reduceSize{ /*there will be reduction in size*/
+
+	from{ 
+		height: 200px;
+		width: 200px;
+	}
+
+	to{
+		height: 100px;
+		width: 100px;
+	}
+}
+ /*2. Now I want to apply all 3 of them together to the element.*/
