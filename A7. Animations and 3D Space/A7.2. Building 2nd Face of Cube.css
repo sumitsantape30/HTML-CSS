@@ -1,0 +1,44 @@
+
+
+.cube{
+	height:200px;
+	width:200px;
+    position: relative;
+    margin:100px;
+    /*1. I have moved transform-style and perspective to the cube rather than having them at indivisual faces*/ 
+    transform-style: preserve-3d;
+	perspective: 1000px;
+
+	/*3. to visualise the entire cube better and see the transitions around it I'll rotate the entire cube by certain degrees.*/
+	transform: rotateX(25deg) rotateY(-25deg);
+
+}
+/*now we have to add 2nd face to the cube and arrange them together*/
+
+.face{
+	height:100%;
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	transform: all 1s
+}
+
+.one{ 
+	background-color: skyblue;
+	/*2. for now only the 2nd div is visible cox its overlapping the first div*/
+	/*i'll increase the z index value for first div to see the 2nd div if it is there or not*/
+	/*z-index: 10;*/
+
+}
+
+.two{
+	background-color: orange;
+	/*4. now these both are overlapping so I want to make this orange perpendicular to the blue*/
+	transform: rotateY(90deg) translateZ(-100px) translateX(-100px); /*it will be rotated along the Y axis*/
+	
+
+}
+
+
+
