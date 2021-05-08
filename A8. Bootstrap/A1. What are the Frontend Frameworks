@@ -4,4 +4,17 @@ i) Bootstrap ii) Materialize CSS iii) Sementic CSS
 so here we are going to use bootsrap.
 Bootstrap is a popular and opensource frontend framework.
 
+Reason to use bootstrap
+i) Popular
+ii) Saves Time
+iii) loads of styles.
+iii) It is responsive, you dont have to care about your responsiveness like angle etc
+Bootstrap is desinged keeping in mid mobile first first approach.
+iv) it is customizable, if you want to change the style etc
+v) it has great support and documentation available.
+
+cons of using bootrstap
+i) it is bulky, because it is a framework it has lots of features which are available. 
+ii) its popular, many people use bootstrap so website you re building using bootstrap might look similar to others website.
+iii) It uses grid as the layout for placing different elements on screen.
 
