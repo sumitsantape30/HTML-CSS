@@ -1,0 +1,34 @@
+
+/*1.the position of the faces will be absolute and the position of the outer div which is cube will be relative*/
+/*now we'll see how can we visualise this cube and animate it from 3D perspective.*/
+.cube{
+	height:200px;
+	width:200px;
+    position: relative;
+    margin:100px;
+}
+
+.face{
+	height:100%;
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+    transition: absolute; /*add trnasition so that we see can this rotation clearly*/
+	/*2.if you want to preserve 3D perspective for elements so you'll have to add tranform style*/
+	transform-style: preserve-3d; /*this preserves the 3D styles so that you are able to visualise them in 3D space*/
+	perspective: 100px; /*it means if you are viewing an object how deep it is from that perspective*/
+
+}
+
+.one{ /*pehlese set kara hua tha background*/
+	background-color: skyblue;
+}
+
+/*3. on hover I'll rotate this face as it is rotating in a 3D space*/
+.one:hover{
+	transform: rotateX(40deg) rotateY(40deg); /*to rotate, you have tranform as the property*/
+
+}
+
+/*rest of the work will done in the next session*/
