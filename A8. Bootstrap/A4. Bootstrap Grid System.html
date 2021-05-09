@@ -1,0 +1,35 @@
+lets create layout using bootstrap. whie creating layouts grid system is something you should know about. 
+Grid system consist of container, these containers will have rows within them and these rows will have columns within them.
+so every grid in bootstrap is actually a 12 column grid. so if you want to place an element in a row then you can specify its positon and its width in terms of columns.
+suppose I want it to occupy  25% of the area then out of 12 25% means 3 columns. 
+
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<!-- So i have added some of the links to use the bootstrap now I want to have a container, then that container will have row within it and row will have column -->
+	<!-- topmost div should be container so giving it a class as container -->
+	<div class="container"> <!-- if you use container-fluid then it will occupy the complete width -->
+		<div class="row">
+			<div class="col" style="background-color: red;
+			height: 60px;"> <!-- here we have not specified how wide this element is going to be by default it is taking the complete width available means it is 12column wide -->
+
+			</div>
+		</div>
+    </div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+</body>
+</html>
