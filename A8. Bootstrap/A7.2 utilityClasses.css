@@ -1,0 +1,7 @@
+
+/*all border dark classes*/
+.border-dark{
+	border-width: 4px !important; /*I want border width to be 4px*/
+} /*but this rule is not able to override .border rule( inspect and see) coz this rule is important so to override that important we should mark this as !important*/
+/*so after refreshing you can see that border rule is applied*/
+
