@@ -1,0 +1,38 @@
+we created variable for color, you can create variable for font size, dimension, height width whatever you want to.
+there are benifits of using CSS variables, i) It actuall made our code lot more flexible.
+ii) symentically it adds more meaning to the code, like you cant understand which color is tha by seeing the color value.
+these variables arent the variables in Java/CPP, CSS variable dont take space in memory.
+
+So now lets experiment with CSS variables more.
+
+:root{
+	-- text-color: red;
+} /*1. Writing varible value this way means this variable value is defined for root. so all the elements within the html page can actually use this value*/ 
+/*Now I can define this value within the container and class as well*/
+/*if any container or class has not defined their value then it will take it from container*/
+.container{
+	color: ver(-text-color);
+	padding: 1rem;
+	border: 2px solid black;
+}
+
+.inner-div1{
+	-text-color: blue;
+	color: var(--text-color); /* 2. you can also put color:var(--text-color, orange);*/
+	padding: 1rem;
+	border: 2px solid black;
+}
+
+.inner-div2{
+	color: var(--text-color);
+	pdding: 1rem;
+	border: 2px solid black;
+	margin: 0.2rem;
+}
+
+.inner-div3{
+	color: var(--text-color);
+	padding: 1rem;
+	border: 2px solid black;
+	margin: 0.2rem;
+}
