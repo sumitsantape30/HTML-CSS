@@ -1,0 +1,63 @@
+so when had two committed in the first session.
+So whenever we commit our head pointer comes to that commit. Actually head pointer points to 2 things, one is current version of the code. When I created a folder by doing git inti it created a version. the group of versions is called the master
+
+// when  I do git branck it says Head detached and then there is master below it
+$ git branch
+* (HEAD detached at 67fe7cd)
+  master
+
+// Now i'll do
+$ git checkout master //It will find out the latest commit on the master branch and atach the head to latest version and group of versions on which it was made as well
+
+//Now when I do git branch, it just shows me sigle command
+$ git branch
+* master
+
+=============================================================================================================================================================
+Branch: The teams we talked about Internet and Music Player both of them are branches.
+I tell git that I want to make code for internet branch and I tell git that I want to make for the music player branch or the music player team. So what git does is it gives me a set of code which is copy  of master branch.
+
+//so whenever I want to create for a team for a new feature. Before we commited on the same branch but now I want to allocate to the different teams so will make a branch for each team.
+$ git checkout -b internet // -b means you are giving a branch name, so it clearly says switch to a new branch
+
+//so now create a new file in the folder named internet and add some text and then go ahead and commit it before commiting it we add it
+$ git add .
+$ git commit -m 'add internet'
+
+//now lets to git branch again
+$ git branch
+* internet
+  master
+// so it shows me that there two branches one is internet and one is master and highlighted (green one) is the current branch
+so now get on master branch 
+$ git checkout master
+Switched to branch 'master' // initially there used to be commid ids and now I just need to write the name of the branch.
+
+//Now delete the file Internet.txt  and do git checkout internet
+$ git checkout internet
+Switched to branch 'internet'
+// now the file that you deleted will be back in the folder
+
+//now lets look at Music Player
+//so firstly I'll go to the master coz I want  the code to be created from master.
+$ git checkout master
+Switched to branch 'master'
+
+// and now we'll create a new branch
+$ git checkout -b Music_Player
+Switched to a new branch 'Music_Player'
+// now create another new file named music player in the folder and add feature ablumn
+
+// so now add it
+$ git add music_pl.txt
+$ git commit -m 'Create Music Player'
+
+//Now switch to the master and music_pl.txt file will be gone.
+$ git checkout master
+Switched to branch 'master' // now that file will be gone
+
+so now these both Internet and Music Player are working indivisually and independently, in the next we'll see how to merge these two and create a conflict and resolve it
+
+
+
+
