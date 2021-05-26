@@ -1,0 +1,1 @@
+When two teams are working on the copy of same code and they make changes on the same line and they want to merge their code then git asks you which code to be kept maybe both or none. In that it shows conflict while merging the code.
