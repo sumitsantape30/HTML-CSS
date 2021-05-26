@@ -1,0 +1,27 @@
+so there is master branch and there are two branches Internet and Music Player. And Internet gets done first and it gets merged into the master branch and then music player gets done and that code gets merged into the master branch.
+
+$ git branch
+  Music_Player
+  internet
+* master
+
+
+$ git merge Music_Player
+Merge made by the 'recursive' strategy.
+ music_pl.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 music_pl.txt
+ 
+ // now lets delete the useless branches
+ $ git branch -d internet
+Deleted branch internet (was c24526c). //deleted internet branch
+
+$ git branch -d Music_Player
+Deleted branch Music_Player (was e5b4385).
+
+//now after if I do git branch
+$ git branch
+* master
+// there is single master branch
+
+//In the next one we'll learn conflicts, what if two teams change the same set of files
