@@ -1,0 +1,30 @@
+$ git init : The git init command creates a new Git repository. It can be used to convert an existing, unversioned project to a Git repository or initialize a new, empty repository.
+$ git ls : ls shows you the list of files and folders present inside a particular directory or at a particular path where you are present
+$ git ls -a: there's a folder .git, now that folder contains all the history and changes that you have done.
+Untracked Files: It says there is a new file that has been changed but I havent created a snapshot out of those changes, there is not snapshot associated with it, so to create than snapshot we have this commnad git add
+//I want to roll out this feature on my timeline so I'll tell git to take snapshot out of it but before that I need to capture the changes I need to tell which changes to create a snapshot out of. so git commnad include that file. Now when I want to create the snapshot I need to give it a name, before giving it a name there's command called git commit which allows me to put a msg alongside.
+$ git add phone.txt : whenver we are creating 
+$ git commit -m 'Phone Created'  // so commit takes these changes and puts them into named snapshot, so commit creates a snapshot which has a name called "create phone" created
+
+// now make some changes in the file and again do git status, it'll say modified phone.txt
+$ git status
+
+//if I want to see specifically what changes have been done I have a command called git diff 
+$ git diff 
+
+//so now If I want to commit them
+since there is one file and I want to add it either I could chose that file specifically the way we did last time by doing '$ git add phone.txt' the other thing could be '$ git add .' which adds everything that is there in that path.
+$ git add .
+
+//then commit, and commit msg has to be an instruction
+$ git commit -m 'add touchscreen, scratchless to phone'
+
+//so I have rolled out two features and I need to check what was rolled out in the first feature or may be got back to that
+$ git log //so these are the logs of the commits we have done of the features we have rolled out or the changes in the code that we have done.
+
+//so there is those git ids
+$ git checkout 27e9ffd9464045b54281143d21f01e16f1c7ebdc //it helps me look at, what changes were there in that commit id. If you see in the actual text file the changes are back to what it was before.
+// so this was the status of my code at that point commit.
+
+//so if you do git checkout again with new if
+$ git checkout 67fe7cd0cdbc552d75630d1e3b4b6708ac7b7ab8 //now changes will back to normal 
