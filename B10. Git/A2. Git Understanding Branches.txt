@@ -1,0 +1,5 @@
+lets say a base product which is Phone is getting developed and multiple teams are working on it. So now I have already added two featurers to it touchscreen and scratchless. And now I need to add two more features i) Internet ii) Music Player
+so I tell git who's tacking my repository to give me a copy of piece of my code to team internet and give copy of my code to team music player. So now both of them have copy of similar each others code but now they will start working seprately on piece of code.
+Now lets say music player gets first and it gets merged into phone at time Y and Internet is still being developed, and some point of time Internet also gets completed. and got merged on time Z. The internet team has added refresh button. But both the teams added their feature in the same line/place in the file. 
+So this is conflict, so git should ask me to resolve or ask team internet when they are merging its code to phone. So git tells us which are the conflicting lines in similar files and it asks you whether to keep which line or may be both the lines.
+so next we'll se how git handles this using commnands
