@@ -1,0 +1,5 @@
+Open chrome browser and inspect and got to console, this is where we'll be writing our codes and run.
+
+window.alert("Hey"); //press enter to run it and it wil display "Hey"
+
+the only concern with this is we will bot be able to write to bunch of codes/ lines and then exectue it. I will have to write them line by line and then execute so for that we'll be adding chrome extension call scratch.js
