@@ -1,0 +1,23 @@
+So JS does automatic type conversion.
+1 + '1' = '11' // 1 is number and '1' is string, so number will be converted to string and they will be concantenated.
+1 - '1' = 0 //so string will be converted to the number and then the result will be the number.
+1 * '1' = 1
+so there is this automatic type conversions that takes place and we call it type coercion.
+so these type conversions actually take place in equality operator as well.
+
+1 == 1
+true
+1 == '1'  // so there will be type conversion taking place here, Stirng will be converted to number and then they will be compared.
+true
+
+1 !='1'
+false
+ 
+// there was a need that programers should be able to compare based on the types of value as well so which is why === or unity operator was introduced.
+so this operator will compare based on a type as well.
+1==='1'
+false // so answer is false, 1 number should not be equal to string both are different so in this case answer is false. there will be no automatic type conversion/coercion will be taking place.
+
+1 !== '1' // answers will be true coz they both are not equal, they have different types.
+true 
+
