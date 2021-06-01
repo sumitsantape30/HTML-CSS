@@ -1,0 +1,66 @@
+var a= 1 / 0
+undefined
+a
+Infinity
+Infinity +1
+Infinity
+Infinity * 2
+Infinity
+Infinity /4
+Infinity
+2 / Infinity
+0
+
+//Infinity also refers to the values which are greater than the maximim value that can be stored in a number in a JS.
+
+Math.pow(10, 2)
+100
+Math.pow(10, 100)
+1e+100
+Math.pow(10, 1000)
+Infinity // now this is beyond what can be stored in a number in a JS so thats why answer will be infinity.
+
+//What maximum number can be stored in JS, you can figured this out this way
+Number.MAX_VALUE
+1.7976931348623157e+308
+
+//So after infinty next type of value is NaN, it refers to Not a Number 
+Math.sqrt(-1) // Square root of negative number doesn not exist so it prints NaN
+NaN
+
+// so if you want to extract integer from the string, you can do that with the following way
+parseInt("100")
+100
+
+//if you give the value which cannot be converted to an integer then it will give Nan
+parseInt("Aaaaaaaa")
+NaN
+
+//so we have discussed that the type is associated with the value and not the varable, vriable holds value and that value had some type
+// so if you want to know what is the type of value that variable is holding then that you can do using type of()
+
+typeof 10
+"number"
+
+var a= 10 // you can do that this way as well, create a variable and then use typeof on that variable
+undefined
+
+ a= true
+true
+typeof a
+"boolean"
+
+var b // if I created a variable and did not assigned any value then chek its type it'll print undefined
+typeof b
+"undefined"
+
+var a= null
+undefined
+typeof a
+"object"  // it returns the type of null as object,  this is actually bug in the javasrcipt, type of null should be null but its object in this case
+
+typeof Infinity
+"number"
+
+typeof NaN
+"number" // the type of NaN is not a number but here it is so that how javascript is
