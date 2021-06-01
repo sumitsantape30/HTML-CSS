@@ -1,0 +1,49 @@
+i) Arithmatic Operators
+10 + 2
+12
+13 / 2
+6.5 // number can be decimal or integeral in jS, in  java since both 13 and 2 are integers answers will be integral but in JS will be numbers coz they are numbers here.
+
+15.5 % 2 // this gives use remainder
+1.5 
+
+ii) Assignment Operators
+var a = 10
+
+//you can also combine above both the operators
+var a = 10
+a += 2
+12
+
+a *= 2
+24
+
+iii) Unary Operators, they take only single operand here
+a++
+24 // a is 25 but value that will be returned is 24
+++a
+26 // 25 incremented to 26
+
+iv) Comparison Operator ( >, <, >=, <=, !=, ==, ===, !==)
+the output of the comparison operator will always be boolean.
+
+var b= 100
+undefined
+var b= 200
+undefined
+a==b
+false
+
+v) Logical Operators
+(&&, ||)
+(in && if first condition is false then it wont check the second condition and will return false, And in || if the first conditon is true then it wont check the 2dn condition coz its true anyways.)
+
+a < 20 && b > 10
+false
+a < 20 || b > 10
+true
+
+a < 20 && b++ > 99
+false // overall answer will be false because first condition is false and if I print b the value of b is 100 coz 2nd condition didnt run.
+
+
