@@ -1,0 +1,8 @@
+declareation: delcaration means that you are declaring the variable and not assigning any value to it
+definition : definition means you are creating a variable as well assigning a value to it.
+
+var= address
+console.log(var) // it wont print anything will give undefined coz we havent assigned any vlue to it
+
+address = null // this actually means I have set the value of address but Idk what the address of person is 
+so undefined means that you have not yet set the value and null means there is absence of value so you want to set the value of variable but you dont have that value as of now so setting it to null.
