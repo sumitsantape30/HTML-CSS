@@ -23,4 +23,29 @@ showAlert("Hey"); //now while calling the function I'll pass the message I want 
 ==========================================================
   
   // you can also create a function that takes more that one input as well
-  
+  // In order to create a function write function keyword and then write function name and then curly brackets to indicate start and end of the function
+function showAlert(){
+    // so this function will show an alert
+    alert("Hey!");
+}
+
+function Sum(a, b){
+ console.log(a+b);   
+}
+// we use camel case while naming function, first letter will be small and then first letter of every word will be capital
+//showAlert();
+Sum(4,6);
+
+============================================================================
+    // suppose I want to return the value
+    
+    function showAlert(){
+    alert("Hey!");
+}
+
+function Sum(a, b){
+  return a+b;
+}
+
+var result= Sum(4,6);
+console.log(result);
