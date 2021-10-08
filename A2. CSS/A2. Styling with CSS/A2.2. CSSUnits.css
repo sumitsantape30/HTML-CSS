@@ -43,6 +43,7 @@ so 1rem is equivalent to the font size of root, 1rem= font_size of root. If font
 	background-color: #07e250
 } /*after getting output if you inspect it you'll see width and height to be 120x80 means it's 6rem*4rem so we can conclude here that 1rem=20px  */ 
 
+/* if you want to change the value of 1 rem we can do that as well, you can change the font size of html element */
 html{
 	font-size: 30px;
 }
