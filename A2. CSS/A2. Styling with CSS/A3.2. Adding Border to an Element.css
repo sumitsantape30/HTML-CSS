@@ -51,7 +51,7 @@
     /*comment upar wale border style and color */
     border: 4px solid red; /*so instead of using the 3 different properties you can just use the border property and specify all 3 values there*/
     
-    /*we can have round border as well for that we can use order radius*/
+    /*we can have round border as well for that we can use border radius*/
     border-radius: 4px; /*we can achieve the varius shape using the border radius property*/
 }
 
