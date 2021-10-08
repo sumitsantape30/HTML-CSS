@@ -45,7 +45,7 @@
    /*If I end up specifying 3 values then first value will be considered for top border, last value will correspond to bottom border and left and right will be 4*/
    /* border-width: 2px 4px 6px;*/
 
-    /*you can specify 4 values as well, then first value is for top, second value is for right, then 3 value is for botto, and fourth value will be for 8  */
+    /*you can specify 4 values as well, then first value is for top, second value is for right, then third value is for bottom, and fourth value will be for left  */
   
     /*I can combine all three properties of border in one line*/
     /*comment upar wale border style and color */
