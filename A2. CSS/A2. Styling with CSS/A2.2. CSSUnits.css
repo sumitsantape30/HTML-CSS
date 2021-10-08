@@ -20,7 +20,7 @@ I want height of this div2 should be 50% of the height of the parent so I can re
 	background-color: cyan;
 }
 
-/*Another relative unit is vh and vw, vh is viewput height and vh is viewput width*/
+/*Another relative unit is vh and vw, vh is viewput height and vw is viewput width*/
 /*viewput is the visible area of the browser*/
 /*so I can specify height and width instead of pixels in terms of viewput*/
  /*comment the top #div*/
