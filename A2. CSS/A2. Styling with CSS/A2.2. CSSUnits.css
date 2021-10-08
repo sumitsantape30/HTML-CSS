@@ -13,7 +13,7 @@
 
 /*Now I can actually specify height and width of this div relative to the parent*/
 /*so I can specify height and width of div2 in terms of it's parents height and width
-I wan height of this div2 should be 50% of the height of the parent so I can relatively specify in percentage*/
+I want height of this div2 should be 50% of the height of the parent so I can relatively specify in percentage*/
 #div2{
 	height: 50%;
 	width: 50%;
