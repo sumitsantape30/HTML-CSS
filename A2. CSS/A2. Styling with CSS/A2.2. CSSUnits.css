@@ -48,6 +48,4 @@ html{
 	font-size: 30px;
 }
 
-/*there's also other unit called as em, rem is related to root and em is ralted to parent so 1em will be equivalant to font-size of parent of that element*/
-
-
+/*there's also other unit called as em, rem is related to root and em is related to parent so 1em will be equivalant to font-size of parent of that element*/
