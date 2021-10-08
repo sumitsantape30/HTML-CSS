@@ -18,6 +18,7 @@ h1, p {
 } /*you can group selectors this way*/
 
 /*we can also group classes or id's as well (h1, uppercase, # etc) */
+/* eg. h1, .uppercase, #...
 /*so if there are certain set of rules which are common so instead of writing them again and again we can just group them */
 
 
