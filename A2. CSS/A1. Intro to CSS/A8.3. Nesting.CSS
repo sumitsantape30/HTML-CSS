@@ -48,3 +48,9 @@ there's actually another option to do that*/
 	color: #1e6b4b;
 }
 
+/* applying CSS on hover */
+#blog-title: hover{
+	color: orange: 
+/* 	on hover I want to change the color of text to the orange */
+}
+/* this is called as pseudo class, means now you are in hovering state */
