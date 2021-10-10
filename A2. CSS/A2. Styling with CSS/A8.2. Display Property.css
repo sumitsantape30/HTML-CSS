@@ -30,7 +30,7 @@ span{
 	 /*coz their height and width is now 0, coz height and width are not working coz we have made divs inline so for an inline elment you cannot set its height and width*/
      /*coz inline elements are expected to behave this way, they're inline means they'll occupy only that much space that is required for them*/
     /*so because divs are empty here, they don't have anything content in them so which is why they are not occupying any space that's why height and width are not working which why they are 0 you can check by inspecting
-    also if you have an inline element or you set it to online you should know that you can't set their height and width property, you cannot give vertical mergin and padding as well 
+    also if you have an inline element or you set it to inline you should know that you can't set their height and width property, you cannot give vertical margin and padding as well 
      so there are the limitations of inline*/
      /*so to see your divs add some content inside the div, don't keep them empty completely so add abcd and defg in divs*/
     /*so now in output the height and width will be that much that is required for the content, so height and width is adjusted according to the content this is because they are inline*/
