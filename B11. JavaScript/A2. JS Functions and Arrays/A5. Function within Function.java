@@ -15,4 +15,23 @@ outer();
 
 =================================================
   
+var name= "global";
+
+function outer(){
+    var name= "outer";
+     var outerVar= 10;
+    function inner(){ 
+        var innerVar= 10;
+        var name="inner";
+        console.log(name);
+      }
+    inner();
+    console.log(name);
+}
+
+outer();
+console.log(name);
+
+//pehle current scope mai dekhege, agar current scope mai nhi hai to outer scope mai dekhega agar outer scope mai bhi nhi hai to woh global scope mai dekhege
+
   
