@@ -8,6 +8,7 @@ so there is this automatic type conversions that takes place and we call it type
 so these type conversions actually take place in equality operator as well.
 so in case of -(substraction) there is type coversion is happening but in case of +(plus) it is working as concatanation.
 
+//the effect of type coersion takes places in case of camparative as well
 1 == 1
 true
 1 == '1'  // so there will be type conversion taking place here, Stirng will be converted to number and then they will be compared.
