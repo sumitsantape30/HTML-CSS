@@ -1,4 +1,4 @@
-//Scopre: it is the in which you can use the variable, where this variable is accessible.
+//Scopre: it is the area in which you can use the variable, where this variable is accessible.
 
 var name= "scope"; //this variable has global scope means this can be accessed throughout the program
 console.log(name);
