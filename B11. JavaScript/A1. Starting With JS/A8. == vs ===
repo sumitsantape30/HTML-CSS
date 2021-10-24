@@ -4,6 +4,7 @@ So JS does automatic type conversion.
 1 * '1' = 1
 so there is this automatic type conversions that takes place and we call it type coercion.
 so these type conversions actually take place in equality operator as well.
+so in case of -(substraction) there is type coversion is happening but in case of +(plus) it is working as concatanation.
 
 1 == 1
 true
