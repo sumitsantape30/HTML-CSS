@@ -85,4 +85,4 @@ if( a){
 }
 Output: False
 
-// and if it is null the its false as well.
+// and if I initialise a= null or a== undefined then it will give false as well.
