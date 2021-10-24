@@ -54,3 +54,8 @@ console.log("global context");
   
  //see its dry run in book on page L-2 to L3
   
+Output:
+Inside c
+Inside b
+Inside a
+global context
