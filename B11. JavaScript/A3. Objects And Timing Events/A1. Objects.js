@@ -1,3 +1,5 @@
+//Objects help us in wrapping data and functionalities together, objects are basically collection of key-value pairs, key being the properties and values being the value of those properties and all the keys are string. 
+
 //var students = {}; // this is an empty object, you can add properties as well
 var students = {
     name: "abc",
