@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- I want if button is clicked some action should be performed, it should alert us on clicking the button -->
+    <!-- one way to do it is by using attribute -->
+    <!-- <button id="bnt" onclick="alert('Hello')"> Say Hello!</button> -->
+    <button id="btn"> Say Hello!</button>
+    
+    <!-- next option is to add event listeners to the element that you want to handle -->
+    <script>
+        var helloButton= document.getElementById('btn');
+        // we have the button now we need to add event listener to this button
+        //addEventListener needs 2 arguments, first is the event that you want to handle and next is the function that you want to perfom or the action you want to perform.
+        helloButton.addEventListener('click', function (){// click is the event that I want to handle, and handler will be the function which will have the desired code
+            alert('Hello');
+        } );   // I can create a function inside or I can create a function pass
+    
+    </script>
+
+</body>
+</html>
