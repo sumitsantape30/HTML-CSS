@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id= "one">Heading</h1>
+    <h2 id= "two">Heading</h2>
+    <h3 class= "para">Sample Paragraph</h3>
+
+</body>
+</html>
+
+//in the above html doc we have id to the heading element and class to the third
+
+// Now open browser console
+
+//Now I want to access particular elements from this object
+document.getElementById('one');  //if I want to fetch elements by its id. so this will give me the element having id one
+<h1 id=​"one">​Heading​</h1>​ 
+
+//Now if I want to change the color of head
+var heading = document.getElementById('one');
+>undefined
+heading.style.color= 'red';
+>'red'
+heading.style.backgroundColor= 'cyan';
+>'cyan'
+
+// you can also access the elements by tags
+
+var headings= document.getElementsByTagName('h1');
+>undefined
+headings
+>HTMLCollection [h1#one, one: h1#one]0: h1#onelength: 1one: h1#one[[Prototype]]: HTMLCollection
+//there are 2 hedings, if I want to change the text of 2nd heading
+headings[1].innerText= "Second Heading";
+
+//you can access by class as well.
+var para= document.getElementsByClassName('para');
+>undefined
+para[0].style.backgroundColor = 'cyan'; //this will change the background color to cyan
+>'cyan'
+
+//you can also access by using  CSS selectors as well. 
+//It'll give the first matching result
+var heading= document.querySelector('#one');
+undefined
+heading
+<h1 id=​"one" style=​"color:​ red;​ background-color:​ cyan;​">​Heading​</h1>​
+heading.innerText = "Heyy";
+'Heyy'
+
+//you can access using query selector for class as well.
+var para= document.querySelector('.para'); //this will give you first matching selector
+var para= document.querySelectorAll('.para'); //this will give you all matching selector
+
+
+
